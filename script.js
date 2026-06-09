@@ -1,0 +1,227 @@
+const translations = {
+  zh: {
+    brand_subtitle: "国际医疗服务",
+    nav_services: "服务",
+    nav_network: "医院医生",
+    nav_journey: "流程",
+    nav_contact: "联系",
+    nav_cta: "免费评估",
+    hero_eyebrow: "面向全球患者的中国高端医疗协调服务",
+    hero_title: "连接中国知名医院与医生，陪伴完成跨国就医全流程",
+    hero_copy:
+      "从病历整理、专家匹配、远程二诊，到签证行程、入院陪诊、翻译支付和回国随访，我们为海外患者提供清晰、可靠、可追踪的中国医疗服务通道。",
+    hero_primary: "提交病例评估",
+    hero_secondary: "查看服务流程",
+    trust_1: "48小时初步反馈",
+    trust_2: "多语种医疗翻译",
+    trust_3: "全程个案经理",
+    intro_kicker: "Why ChinaCare Bridge",
+    intro_title: "把复杂的跨国医疗，拆成每一步都有人负责的服务",
+    intro_copy:
+      "国际患者往往同时面对语言、病历格式、医院选择、预约规则、签证、支付、住宿、术后复诊等问题。我们以个案经理为中心，协调医院、医生、翻译、行程与家属沟通，让患者在进入中国前就知道下一步该做什么。",
+    stat_1: "重点专科方向",
+    stat_2: "服务语言支持",
+    stat_3: "专属个案经理",
+    stat_4: "在华紧急协调",
+    services_kicker: "Full-Cycle Services",
+    services_title: "覆盖来华就医前、中、后的关键环节",
+    service_1_title: "病例整理与医学翻译",
+    service_1_copy: "收集影像、检验、病理和治疗记录，整理成中国医院可快速评估的双语资料包。",
+    service_2_title: "医院与专家匹配",
+    service_2_copy: "根据疾病类型、治疗阶段、预算和城市偏好，推荐合适的三甲医院、国际部和医生。",
+    service_3_title: "远程二诊与治疗方案",
+    service_3_copy: "协助预约线上专家意见，帮助患者在出发前理解可选方案、风险和预估周期。",
+    service_4_title: "签证、住宿与交通",
+    service_4_copy: "提供邀请函材料协调、医疗行程规划、机场接送、近院住宿和家属陪同安排。",
+    service_5_title: "入院陪诊与现场翻译",
+    service_5_copy: "陪同挂号、检查、缴费、住院沟通和医生查房，减少语言和流程带来的压力。",
+    service_6_title: "出院计划与回国随访",
+    service_6_copy: "整理出院小结、用药说明和复查计划，协调远程复诊并与本国医生衔接。",
+    network_kicker: "Hospital & Doctor Network",
+    network_title: "对接中国知名医院资源，按病情寻找合适医生",
+    network_copy:
+      "我们重点覆盖北京、上海、广州、杭州、成都等医疗中心城市，可协助联系公立三甲医院国际部、专科中心和多学科会诊团队。最终就诊安排以医院实际接诊政策和医生评估为准。",
+    specialty_1: "肿瘤综合治疗",
+    specialty_2: "心血管与介入",
+    specialty_3: "骨科与运动医学",
+    specialty_4: "神经内外科",
+    specialty_5: "生殖与妇产",
+    specialty_6: "康复与中西医结合",
+    panel_title: "医生选择原则",
+    panel_copy: "不承诺“最好医生”，只基于病情、专科经验、可预约性和患者目标做透明推荐。",
+    journey_kicker: "Patient Journey",
+    journey_title: "从首次咨询到回国复诊的六步流程",
+    step_1_title: "提交病例",
+    step_1_copy: "上传诊断、检查、影像和治疗记录，说明目标、预算、语言和期望城市。",
+    step_2_title: "医学资料审核",
+    step_2_copy: "个案经理与医学顾问确认资料完整性，必要时补充检查或翻译。",
+    step_3_title: "匹配医院医生",
+    step_3_copy: "提供可选医院、医生方向、预计时间、费用范围和所需材料。",
+    step_4_title: "远程会诊确认",
+    step_4_copy: "协助线上问诊、翻译沟通和方案解释，确认是否适合来华治疗。",
+    step_5_title: "来华就医执行",
+    step_5_copy: "安排接机、住宿、预约、陪诊、支付协调和住院期间家属沟通。",
+    step_6_title: "回国随访",
+    step_6_copy: "提供双语医疗文件、复查提醒和远程复诊，帮助衔接本地医生。",
+    care_kicker: "Care Model",
+    care_title: "一个患者，一个跨文化医疗协调团队",
+    role_1_title: "个案经理",
+    role_1_copy: "管理时间线、资料、费用清单和医院沟通。",
+    role_2_title: "医学翻译",
+    role_2_copy: "处理病历、会诊、查房和出院资料翻译。",
+    role_3_title: "行程协调",
+    role_3_copy: "协助签证材料、住宿、交通和家属安排。",
+    role_4_title: "随访支持",
+    role_4_copy: "跟进复查节点、远程复诊和回国后的沟通。",
+    contact_kicker: "Start Here",
+    contact_title: "提交基础信息，获取初步就医路径建议",
+    contact_copy:
+      "请简要描述疾病、所在国家、希望来华时间和已有资料。我们会先判断是否需要补充病历，再给出下一步沟通方式。",
+    check_1: "不会替代医生诊断或急救服务",
+    check_2: "费用、预约与治疗方案以医院确认为准",
+    check_3: "患者资料仅用于医疗协调与评估沟通",
+    form_name: "姓名",
+    form_contact: "邮箱或 WhatsApp",
+    form_country: "所在国家",
+    form_specialty: "需要咨询的方向",
+    form_message: "病例简述",
+    form_submit: "发送评估请求",
+    option_oncology: "肿瘤/癌症",
+    option_cardiology: "心血管",
+    option_orthopedics: "骨科",
+    option_neuro: "神经科",
+    option_other: "其他",
+    footer_copy: "International patient coordination for medical care in China.",
+    footer_services: "Services",
+    footer_network: "Network",
+    footer_contact: "Contact",
+    status: "已收到演示请求。正式上线时这里可接入 CRM、邮件或 WhatsApp 通知。"
+  },
+  en: {
+    brand_subtitle: "International Medical Services",
+    nav_services: "Services",
+    nav_network: "Hospitals & Doctors",
+    nav_journey: "Journey",
+    nav_contact: "Contact",
+    nav_cta: "Free Assessment",
+    hero_eyebrow: "China medical coordination for global patients",
+    hero_title: "Connect with leading hospitals and doctors in China, with support at every step",
+    hero_copy:
+      "From medical record preparation, specialist matching, and remote second opinions to visas, travel, admission, interpretation, payment coordination, and follow-up, we help international patients navigate care in China with clarity.",
+    hero_primary: "Submit Case",
+    hero_secondary: "View Journey",
+    trust_1: "Initial reply in 48 hours",
+    trust_2: "Multilingual medical interpretation",
+    trust_3: "Dedicated case manager",
+    intro_kicker: "Why ChinaCare Bridge",
+    intro_title: "We turn cross-border healthcare into a guided, accountable process",
+    intro_copy:
+      "International patients face language barriers, different medical record formats, hospital selection, appointment rules, visas, payment, housing, and post-treatment follow-up. A dedicated case manager coordinates hospitals, doctors, interpreters, travel, and family communication before the patient enters China.",
+    stat_1: "Specialty areas",
+    stat_2: "Service languages",
+    stat_3: "Dedicated case manager",
+    stat_4: "In-China urgent coordination",
+    services_kicker: "Full-Cycle Services",
+    services_title: "Support before, during, and after treatment in China",
+    service_1_title: "Medical Records & Translation",
+    service_1_copy: "We collect imaging, lab, pathology, and treatment records, then prepare a bilingual packet for hospital review.",
+    service_2_title: "Hospital & Specialist Matching",
+    service_2_copy: "We recommend suitable hospitals, international departments, and doctors based on condition, stage, budget, and city preference.",
+    service_3_title: "Remote Second Opinion",
+    service_3_copy: "We coordinate online specialist opinions so patients can understand options, risks, and timelines before traveling.",
+    service_4_title: "Visa, Housing & Transport",
+    service_4_copy: "We help coordinate invitation materials, medical travel plans, airport transfer, nearby lodging, and family support.",
+    service_5_title: "Admission Escort & Interpretation",
+    service_5_copy: "We assist with registration, examinations, payment, inpatient communication, and ward-round interpretation.",
+    service_6_title: "Discharge & Follow-Up",
+    service_6_copy: "We organize discharge summaries, medication guidance, review plans, remote follow-up, and handoff to local doctors.",
+    network_kicker: "Hospital & Doctor Network",
+    network_title: "Access respected medical resources in China based on the patient's condition",
+    network_copy:
+      "Our focus cities include Beijing, Shanghai, Guangzhou, Hangzhou, and Chengdu. We can help contact international departments, specialty centers, and multidisciplinary teams. Final appointments depend on hospital policy and physician review.",
+    specialty_1: "Oncology",
+    specialty_2: "Cardiology & Intervention",
+    specialty_3: "Orthopedics & Sports Medicine",
+    specialty_4: "Neurology & Neurosurgery",
+    specialty_5: "Fertility & Women's Health",
+    specialty_6: "Rehabilitation & Integrative Care",
+    panel_title: "How We Recommend Doctors",
+    panel_copy: "We do not promise the “best doctor”; we recommend transparently based on condition, specialty experience, availability, and patient goals.",
+    journey_kicker: "Patient Journey",
+    journey_title: "A six-step path from first inquiry to follow-up at home",
+    step_1_title: "Submit Case",
+    step_1_copy: "Share diagnosis, tests, imaging, treatment history, goals, budget, language, and preferred city.",
+    step_2_title: "Record Review",
+    step_2_copy: "A case manager and medical advisor check completeness and request translation or missing records if needed.",
+    step_3_title: "Match Care Options",
+    step_3_copy: "Receive possible hospitals, doctor directions, expected timing, fee ranges, and required materials.",
+    step_4_title: "Remote Consultation",
+    step_4_copy: "We coordinate online consultations, interpretation, and explanation to confirm whether travel is appropriate.",
+    step_5_title: "Care in China",
+    step_5_copy: "We arrange arrival support, lodging, appointments, escort, payment coordination, and family communication.",
+    step_6_title: "Follow-Up Home",
+    step_6_copy: "Receive bilingual files, review reminders, remote follow-up, and support for local doctor handoff.",
+    care_kicker: "Care Model",
+    care_title: "One patient, one cross-cultural care coordination team",
+    role_1_title: "Case Manager",
+    role_1_copy: "Manages timeline, records, fee lists, and hospital communication.",
+    role_2_title: "Medical Interpreter",
+    role_2_copy: "Supports records, consultations, ward rounds, and discharge translation.",
+    role_3_title: "Travel Coordinator",
+    role_3_copy: "Helps with visa materials, lodging, transport, and family arrangements.",
+    role_4_title: "Follow-Up Support",
+    role_4_copy: "Tracks review dates, remote visits, and post-return communication.",
+    contact_kicker: "Start Here",
+    contact_title: "Submit basic information for an initial care-path assessment",
+    contact_copy:
+      "Briefly describe the condition, country, preferred travel date, and available records. We will check whether more records are needed and suggest the next communication step.",
+    check_1: "Not a replacement for diagnosis or emergency care",
+    check_2: "Fees, appointments, and treatment plans require hospital confirmation",
+    check_3: "Patient records are used only for coordination and assessment",
+    form_name: "Name",
+    form_contact: "Email or WhatsApp",
+    form_country: "Country",
+    form_specialty: "Specialty",
+    form_message: "Case summary",
+    form_submit: "Send Assessment Request",
+    option_oncology: "Oncology / Cancer",
+    option_cardiology: "Cardiology",
+    option_orthopedics: "Orthopedics",
+    option_neuro: "Neurology",
+    option_other: "Other",
+    footer_copy: "International patient coordination for medical care in China.",
+    footer_services: "Services",
+    footer_network: "Network",
+    footer_contact: "Contact",
+    status: "Demo request received. In production this can connect to CRM, email, or WhatsApp notifications."
+  }
+};
+
+let currentLanguage = "zh";
+const toggle = document.querySelector(".language-toggle");
+const form = document.querySelector("#consultation-form");
+const status = document.querySelector(".form-status");
+
+function applyLanguage(language) {
+  currentLanguage = language;
+  document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.getAttribute("data-i18n");
+    if (translations[language][key]) {
+      element.textContent = translations[language][key];
+    }
+  });
+  toggle.textContent = language === "zh" ? "EN" : "中文";
+  toggle.setAttribute("aria-pressed", String(language === "en"));
+  status.textContent = "";
+}
+
+toggle.addEventListener("click", () => {
+  applyLanguage(currentLanguage === "zh" ? "en" : "zh");
+});
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  status.textContent = translations[currentLanguage].status;
+  form.reset();
+});
