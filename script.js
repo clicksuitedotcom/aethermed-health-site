@@ -1,6 +1,6 @@
 const translations = {
   zh: {
-    brand_subtitle: "国际医疗服务",
+    brand_subtitle: "国际医疗协调服务",
     nav_services: "服务",
     nav_network: "医院医生",
     nav_journey: "流程",
@@ -15,7 +15,7 @@ const translations = {
     trust_1: "48小时初步反馈",
     trust_2: "多语种医疗翻译",
     trust_3: "全程个案经理",
-    intro_kicker: "Why ChinaCare Bridge",
+    intro_kicker: "Why AetherMed Health",
     intro_title: "把复杂的跨国医疗，拆成每一步都有人负责的服务",
     intro_copy:
       "国际患者往往同时面对语言、病历格式、医院选择、预约规则、签证、支付、住宿、术后复诊等问题。我们以个案经理为中心，协调医院、医生、翻译、行程与家属沟通，让患者在进入中国前就知道下一步该做什么。",
@@ -98,7 +98,7 @@ const translations = {
     status: "已收到演示请求。正式上线时这里可接入 CRM、邮件或 WhatsApp 通知。"
   },
   en: {
-    brand_subtitle: "International Medical Services",
+    brand_subtitle: "International Medical Access",
     nav_services: "Services",
     nav_network: "Hospitals & Doctors",
     nav_journey: "Journey",
@@ -113,7 +113,7 @@ const translations = {
     trust_1: "Initial reply in 48 hours",
     trust_2: "Multilingual medical interpretation",
     trust_3: "Dedicated case manager",
-    intro_kicker: "Why ChinaCare Bridge",
+    intro_kicker: "Why AetherMed Health",
     intro_title: "We turn cross-border healthcare into a guided, accountable process",
     intro_copy:
       "International patients face language barriers, different medical record formats, hospital selection, appointment rules, visas, payment, housing, and post-treatment follow-up. A dedicated case manager coordinates hospitals, doctors, interpreters, travel, and family communication before the patient enters China.",

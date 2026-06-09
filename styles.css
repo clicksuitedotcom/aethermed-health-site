@@ -62,19 +62,53 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 13px;
   min-width: max-content;
 }
 
 .brand-mark {
+  position: relative;
   display: grid;
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   place-items: center;
-  border-radius: 8px;
+  border-radius: 12px;
   color: var(--white);
-  background: var(--teal);
+  background:
+    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.28), transparent 28%),
+    linear-gradient(145deg, #0f96a0, var(--teal-dark));
+  box-shadow: 0 12px 28px rgba(13, 127, 134, 0.24);
+  overflow: hidden;
+}
+
+.brand-mark span {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-1px);
+  font-size: 28px;
   font-weight: 800;
+  line-height: 1;
+}
+
+.brand-mark::before,
+.brand-mark::after {
+  position: absolute;
+  right: 9px;
+  bottom: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  content: "";
+}
+
+.brand-mark::before {
+  width: 15px;
+  height: 4px;
+}
+
+.brand-mark::after {
+  width: 4px;
+  height: 15px;
+  transform: translate(-5.5px, 5.5px);
 }
 
 .brand strong,
@@ -83,12 +117,18 @@ textarea {
 }
 
 .brand strong {
+  color: var(--ink);
+  font-size: 19px;
   line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .brand small {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .main-nav,
