@@ -4,3 +4,4 @@ _worker.js
 README.md
 .gitignore
 .assetsignore
+wrangler.toml
