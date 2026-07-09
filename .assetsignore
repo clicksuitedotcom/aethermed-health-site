@@ -1,0 +1,6 @@
+_worker.js
+.git/
+.wrangler/
+README.md
+.gitignore
+.assetsignore
