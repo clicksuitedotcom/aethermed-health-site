@@ -249,6 +249,11 @@ textarea {
   background: var(--teal-dark);
 }
 
+.button:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+}
+
 .button-small {
   min-height: 38px;
   padding: 0 16px;

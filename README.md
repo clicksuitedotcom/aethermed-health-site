@@ -121,6 +121,27 @@ aethermed.health
 www.aethermed.health
 ```
 
+## Contact Form Email
+
+The website contact form posts to a Cloudflare Pages Function:
+
+```text
+/api/contact
+```
+
+The function sends form submissions through Resend. Configure these environment variables in Cloudflare Pages:
+
+```text
+RESEND_API_KEY=your_resend_api_key
+CONTACT_TO_EMAIL=info@aethermed.health
+CONTACT_FROM_EMAIL=AetherMed Website <no-reply@aethermed.health>
+CONTACT_CC_EMAIL=mary.tang@aethermed.health
+```
+
+`CONTACT_CC_EMAIL` is optional. The sender domain should be verified in Resend before production use.
+
+For privacy and deliverability, uploaded medical files are not forwarded as email attachments. The email includes the uploaded file names so the team can follow up through a secure channel if documents are needed.
+
 ## DNS Notes
 
 The domain was registered through GoDaddy, but DNS should be managed in Cloudflare.

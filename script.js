@@ -210,7 +210,9 @@ const translations = {
     footer_canada_address: "8 Nelson St W 6, Brampton, Ontario, L6X 1B7, Canada",
     footer_email_label: "咨询邮箱",
     footer_rights: "© 2026 AetherMed. 保留所有权利。",
-    status: "已收到演示请求。正式上线时这里可接入 CRM、邮件或 WhatsApp 通知。"
+    status_sending: "正在发送，请稍候...",
+    status_success: "已收到您的信息，我们会尽快通过邮箱或 WhatsApp 与您联系。",
+    status_error: "发送失败，请稍后重试，或直接发送邮件至 info@aethermed.health。"
   },
   en: {
     brand_subtitle: "China Care, Global Access",
@@ -423,7 +425,9 @@ const translations = {
     footer_canada_address: "8 Nelson St W 6, Brampton, Ontario, L6X 1B7, Canada",
     footer_email_label: "Email",
     footer_rights: "© 2026 AetherMed. All rights reserved.",
-    status: "Demo request received. In production this can connect to CRM, email, or WhatsApp notifications."
+    status_sending: "Sending your request...",
+    status_success: "Your information has been received. We will contact you by email or WhatsApp soon.",
+    status_error: "Submission failed. Please try again later or email info@aethermed.health directly."
   }
 };
 
@@ -476,10 +480,29 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  status.textContent = translations[currentLanguage].status;
-  form.reset();
+  const submitButton = form.querySelector('button[type="submit"]');
+  status.textContent = translations[currentLanguage].status_sending;
+  if (submitButton) submitButton.disabled = true;
+
+  try {
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      body: new FormData(form)
+    });
+
+    if (!response.ok) {
+      throw new Error("Contact form request failed");
+    }
+
+    status.textContent = translations[currentLanguage].status_success;
+    form.reset();
+  } catch (error) {
+    status.textContent = translations[currentLanguage].status_error;
+  } finally {
+    if (submitButton) submitButton.disabled = false;
+  }
 });
 
 
