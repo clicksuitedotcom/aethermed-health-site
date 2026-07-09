@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,31 +8,51 @@
       name="description"
       content="AetherMed Health helps international patients connect with leading hospitals and doctors in China, coordinating second opinions, travel, admission, interpretation, and follow-up care."
     />
-    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="icon" type="image/png" href="./assets/aethermed-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/aethermed-logo.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="AetherMed Health home">
         <span class="brand-mark" aria-hidden="true">
-          <span>a</span>
+          <img src="./assets/aethermed-logo.png" alt="" />
         </span>
         <span>
-          <strong>aethermed.health</strong>
-          <small data-i18n="brand_subtitle">国际医疗协调服务</small>
+          <strong>AetherMed</strong>
+          <small data-i18n="brand_subtitle">中国医疗，全球通达</small>
         </span>
       </a>
 
       <nav class="main-nav" aria-label="Primary navigation">
-        <a href="#services" data-i18n="nav_services">服务</a>
-        <a href="#network" data-i18n="nav_network">医院医生</a>
-        <a href="#journey" data-i18n="nav_journey">流程</a>
-        <a href="#contact" data-i18n="nav_contact">联系</a>
+        <a href="#why" data-i18n="nav_services">服务项目</a>
+        <a href="#network" data-i18n="nav_network">医院与医生</a>
+        <a href="#journey" data-i18n="nav_journey">服务流程</a>
+        <a href="#contact" data-i18n="nav_contact">联系我们</a>
       </nav>
 
       <div class="header-actions">
-        <button class="language-toggle" type="button" aria-pressed="false">EN</button>
         <a class="button button-small" href="#contact" data-i18n="nav_cta">免费评估</a>
+        <div class="language-picker">
+          <button class="language-toggle" type="button" aria-expanded="false" aria-label="Choose language">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M3 12h18"></path>
+              <path d="M12 3a13.4 13.4 0 0 1 0 18"></path>
+              <path d="M12 3a13.4 13.4 0 0 0 0 18"></path>
+            </svg>
+          </button>
+          <div class="language-menu" hidden>
+            <button type="button" data-language-option>English</button>
+          </div>
+        </div>
+        <a class="social-link" href="https://www.instagram.com/aethermed.health/" target="_blank" rel="noopener" aria-label="AetherMed Instagram">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1.25"></circle>
+          </svg>
+        </a>
       </div>
     </header>
 
@@ -41,262 +61,454 @@
         <div class="hero-media" aria-hidden="true"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow" data-i18n="hero_eyebrow">面向全球患者的中国高端医疗协调服务</p>
-          <h1 data-i18n="hero_title">连接中国知名医院与医生，陪伴完成跨国就医全流程</h1>
+          <p class="eyebrow" data-i18n="hero_eyebrow">面向全球的中国高端医疗协调服务</p>
+          <h1 data-i18n="hero_title">连接中国名医名院，
+全程护航就医</h1>
           <p class="hero-copy" data-i18n="hero_copy">
-            从病历整理、专家匹配、远程二诊，到签证行程、入院陪诊、翻译支付和回国随访，我们为海外患者提供清晰、可靠、可追踪的中国医疗服务通道。
+            针对医疗旅行和跨境医疗需求，我们协调梳理病例资料、专家匹配、远程诊疗、入院安排、医疗翻译与后续随访，帮助国际访客清晰地了解并完成在中国的医疗服务流程。
           </p>
           <div class="hero-actions">
-            <a class="button" href="#contact" data-i18n="hero_primary">提交病例评估</a>
+            <a class="button" href="#contact" data-i18n="hero_primary">免费评估</a>
             <a class="button button-ghost" href="#journey" data-i18n="hero_secondary">查看服务流程</a>
           </div>
           <div class="trust-row" aria-label="Service highlights">
-            <span data-i18n="trust_1">48小时初步反馈</span>
-            <span data-i18n="trust_2">多语种医疗翻译</span>
-            <span data-i18n="trust_3">全程个案经理</span>
+            <span><strong>24</strong><small data-i18n="trust_1">小时响应时间</small></span>
+            <span><strong>18+</strong><small data-i18n="trust_2">知名医院资源</small></span>
+            <span><strong>100%</strong><small data-i18n="trust_3">英语或法语支持</small></span>
           </div>
         </div>
-      </section>
-
-      <section class="intro section">
+      </section><section class="intro section" id="why">
         <div>
-          <p class="section-kicker" data-i18n="intro_kicker">Why AetherMed Health</p>
-          <h2 data-i18n="intro_title">把复杂的跨国医疗，拆成每一步都有人负责的服务</h2>
+          <p class="section-kicker" data-i18n="intro_kicker">为什么选择 AetherMed</p>
+          <h2 data-i18n="intro_title">连接国际需求与中国优质、高效、可负担的医疗资源</h2>
         </div>
         <p data-i18n="intro_copy">
-          国际患者往往同时面对语言、病历格式、医院选择、预约规则、签证、支付、住宿、术后复诊等问题。我们以个案经理为中心，协调医院、医生、翻译、行程与家属沟通，让患者在进入中国前就知道下一步该做什么。
+          中国医疗在多个专科领域具备成熟技术、响应效率和相对可负担的费用优势。AetherMed 帮助国际访客跨越语言障碍、不同病历格式、医院选择、预约规则、签证、支付、住宿和治疗后随访等复杂环节，并由专属个案经理统一协调医院、医生、翻译、行程与家属沟通。
         </p>
       </section>
-
       <section class="stats-band" aria-label="Service metrics">
         <div>
           <strong>12+</strong>
           <span data-i18n="stat_1">重点专科方向</span>
         </div>
         <div>
-          <strong>6</strong>
-          <span data-i18n="stat_2">服务语言支持</span>
-        </div>
-        <div>
           <strong>1:1</strong>
-          <span data-i18n="stat_3">专属个案经理</span>
+          <span data-i18n="stat_2">专属个案经理</span>
         </div>
         <div>
           <strong>24/7</strong>
-          <span data-i18n="stat_4">在华紧急协调</span>
+          <span data-i18n="stat_3">在华紧急协调支持</span>
+        </div>
+      </section>
+      <section class="intro-specialties section" id="specialties" aria-label="Specialty areas">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="specialties_kicker">专科方向</p>
+          <h2 data-i18n="specialties_title">覆盖从预防健康到复杂专科治疗的多元需求</h2>
+          <p data-i18n="specialties_copy">我们根据病情、就医目标和预算，协助匹配适合的医院、科室和医生，并在需要时协调远程诊疗、来华治疗与后续随访。</p>
+        </div>
+        <div class="intro-specialties-inner">
+          <div class="specialty-group">
+            <p data-i18n="specialty_group_1">预防与内科管理</p>
+            <div class="specialty-area-grid">
+              <span data-i18n="specialty_area_1">体检和健康管理</span>
+              <span data-i18n="specialty_area_2">心血管疾病</span>
+              <span data-i18n="specialty_area_3">消化系统疾病</span>
+              <span data-i18n="specialty_area_4">内分泌与代谢疾病</span>
+              <span data-i18n="specialty_area_5">神经系统疾病</span>
+              <span data-i18n="specialty_area_6">呼吸系统疾病</span>
+            </div>
+          </div>
+          <div class="specialty-group">
+            <p data-i18n="specialty_group_2">专科与手术方向</p>
+            <div class="specialty-area-grid">
+              <span data-i18n="specialty_area_7">骨科与运动科学</span>
+              <span data-i18n="specialty_area_8">妇科疾病</span>
+              <span data-i18n="specialty_area_9">产科、生殖与产后修复</span>
+              <span data-i18n="specialty_area_10">肾脏及泌尿系统</span>
+              <span data-i18n="specialty_area_12">儿科疾病</span>
+            </div>
+          </div>
+          <div class="specialty-group">
+            <p data-i18n="specialty_group_3">康复与中医康养</p>
+            <div class="specialty-area-grid">
+              <span data-i18n="specialty_area_11">中西医结合及康复医学</span>
+              <span data-i18n="specialty_area_13">中医调理及康养</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section" id="services">
         <div class="section-heading">
-          <p class="section-kicker" data-i18n="services_kicker">Full-Cycle Services</p>
+          <p class="section-kicker" data-i18n="services_kicker">全周期服务</p>
           <h2 data-i18n="services_title">覆盖来华就医前、中、后的关键环节</h2>
         </div>
 
         <div class="service-grid">
           <article class="service-card">
-            <span class="card-icon">01</span>
-            <h3 data-i18n="service_1_title">病例整理与医学翻译</h3>
-            <p data-i18n="service_1_copy">收集影像、检验、病理和治疗记录，整理成中国医院可快速评估的双语资料包。</p>
+            <span class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h5"></path><path d="M9 13h6"></path><path d="M9 17h4"></path></svg></span>
+            <h3 data-i18n="service_1_title">病例整理</h3>
+            <p data-i18n="service_1_copy">整理并翻译病历资料，形成医院可快速评估的双语文件包。</p>
           </article>
           <article class="service-card">
-            <span class="card-icon">02</span>
+            <span class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13"></path><path d="M9 21v-7h6v7"></path><path d="M8 10h.01"></path><path d="M12 10h.01"></path><path d="M16 10h.01"></path></svg></span>
             <h3 data-i18n="service_2_title">医院与专家匹配</h3>
-            <p data-i18n="service_2_copy">根据疾病类型、治疗阶段、预算和城市偏好，推荐合适的三甲医院、国际部和医生。</p>
+            <p data-i18n="service_2_copy">按病情和预算匹配合适的医院和医生，并实现双向选择。</p>
           </article>
           <article class="service-card">
-            <span class="card-icon">03</span>
-            <h3 data-i18n="service_3_title">远程二诊与治疗方案</h3>
-            <p data-i18n="service_3_copy">协助预约线上专家意见，帮助患者在出发前理解可选方案、风险和预估周期。</p>
+            <span class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="m9 10 4 2-4 2z"></path><path d="M8 21h8"></path></svg></span>
+            <h3 data-i18n="service_3_title">远程诊疗与治疗方案探讨</h3>
+            <p data-i18n="service_3_copy">协调线上专家意见，帮助出发前了解方案、风险和周期。</p>
           </article>
           <article class="service-card">
-            <span class="card-icon">04</span>
+            <span class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2 16l20-7-9 11-2-6z"></path><path d="M13 20 11 14 2 16"></path></svg></span>
             <h3 data-i18n="service_4_title">签证、住宿与交通</h3>
-            <p data-i18n="service_4_copy">提供邀请函材料协调、医疗行程规划、机场接送、近院住宿和家属陪同安排。</p>
+            <p data-i18n="service_4_copy">协助签证材料、住宿、交通和抵达后的行程安排。</p>
           </article>
           <article class="service-card">
-            <span class="card-icon">05</span>
+            <span class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s7-4.4 7-11a7 7 0 0 0-14 0c0 6.6 7 11 7 11z"></path><path d="M9 10h6"></path><path d="M12 7v6"></path></svg></span>
             <h3 data-i18n="service_5_title">入院陪诊与现场翻译</h3>
-            <p data-i18n="service_5_copy">陪同挂号、检查、缴费、住院沟通和医生查房，减少语言和流程带来的压力。</p>
+            <p data-i18n="service_5_copy">陪同挂号、检查、缴费、住院沟通和医生查房翻译。</p>
           </article>
           <article class="service-card">
-            <span class="card-icon">06</span>
+            <span class="card-icon"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 3v4"></path><path d="M16 3v4"></path><path d="M4 8h16"></path><path d="M5 5h14v16H5z"></path><path d="m9 15 2 2 4-5"></path></svg></span>
             <h3 data-i18n="service_6_title">出院计划与回国随访</h3>
-            <p data-i18n="service_6_copy">整理出院小结、用药说明和复查计划，协调远程复诊并与本国医生衔接。</p>
+            <p data-i18n="service_6_copy">整理出院资料、复查计划和远程随访，衔接本地医生。</p>
           </article>
         </div>
       </section>
 
       <section class="network section" id="network">
         <div class="network-copy">
-          <p class="section-kicker" data-i18n="network_kicker">Hospital & Doctor Network</p>
-          <h2 data-i18n="network_title">对接中国知名医院资源，按病情寻找合适医生</h2>
+          <p class="section-kicker" data-i18n="network_kicker">医院与医生</p>
+          <h2 data-i18n="network_title">对接中国重点医院与专科医生资源</h2>
           <p data-i18n="network_copy">
-            我们重点覆盖北京、上海、广州、杭州、成都等医疗中心城市，可协助联系公立三甲医院国际部、专科中心和多学科会诊团队。最终就诊安排以医院实际接诊政策和医生评估为准。
+            AetherMed 根据病情、城市、预算、语言需求和医院接诊政策，协助国际访客筛选医院路径，并匹配适合的专科医生方向。
           </p>
-          <div class="specialty-list">
-            <span data-i18n="specialty_1">肿瘤综合治疗</span>
-            <span data-i18n="specialty_2">心血管与介入</span>
-            <span data-i18n="specialty_3">骨科与运动医学</span>
-            <span data-i18n="specialty_4">神经内外科</span>
-            <span data-i18n="specialty_5">生殖与妇产</span>
-            <span data-i18n="specialty_6">康复与中西医结合</span>
-          </div>
         </div>
-        <div class="doctor-panel">
-          <img
-            src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=82"
-            alt="Doctor consulting with an international patient"
-          />
-          <div class="panel-note">
-            <strong data-i18n="panel_title">医生选择原则</strong>
-            <p data-i18n="panel_copy">不承诺“最好医生”，只基于病情、专科经验、可预约性和患者目标做透明推荐。</p>
+
+        <div class="network-tabs" data-network-tabs>
+          <div class="tab-list" role="tablist" aria-label="Hospitals and doctors">
+            <button class="tab-button is-active" type="button" role="tab" aria-selected="true" aria-controls="partner-hospitals" id="tab-hospitals" data-tab-target="partner-hospitals" data-i18n="network_tab_hospitals">合作医院</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="doctor-highlights" id="tab-doctors" data-tab-target="doctor-highlights" data-i18n="network_tab_doctors">特邀名医</button>
+          </div>
+
+          <div class="tab-panel is-active" id="partner-hospitals" role="tabpanel" aria-labelledby="tab-hospitals">
+            <div class="carousel-shell">
+              <div class="network-carousel" aria-label="Partner hospitals">
+<article class="network-card hospital-card">
+              <div class="network-card-image"><img src="./assets/shanghai-renji-hospital.png" alt="上海仁济医院"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="hospital_1_type">公立三甲综合医院</p>
+                <h3 data-i18n="hospital_1_name">上海仁济医院（上海交通大学医学院附属）</h3>
+                <p data-i18n="hospital_1_desc">上海历史悠久的综合性医院之一，在消化、肝胆胰、泌尿、肿瘤及复杂多学科会诊方面具备成熟资源。</p>
+                <div class="network-field"><span class="network-field-label" data-i18n="card_field_strengths">优势方向</span><div class="network-card-tags"><span data-i18n="hospital_1_tag_1">消化</span><span data-i18n="hospital_1_tag_2">肝胆胰</span><span data-i18n="hospital_1_tag_3">泌尿</span><span data-i18n="hospital_1_tag_4">肿瘤</span></div></div>
+              </div>
+            </article>
+<article class="network-card hospital-card">
+              <div class="network-card-image"><img src="./assets/shanghai-zhongshan-hospital.jpg" alt="上海中山医院"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="hospital_2_type">公立三甲综合医院</p>
+                <h3 data-i18n="hospital_2_name">上海中山医院（复旦大学附属）</h3>
+                <p data-i18n="hospital_2_desc">复旦大学附属中山医院是上海大型综合医院，心血管、肝肿瘤、消化、普外和重症医学等方向资源突出。</p>
+                <div class="network-field"><span class="network-field-label" data-i18n="card_field_strengths">优势方向</span><div class="network-card-tags"><span data-i18n="hospital_2_tag_1">心血管</span><span data-i18n="hospital_2_tag_2">肝肿瘤</span><span data-i18n="hospital_2_tag_3">消化</span><span data-i18n="hospital_2_tag_4">普外</span></div></div>
+              </div>
+            </article>
+<article class="network-card hospital-card">
+              <div class="network-card-image"><img src="./assets/shanghai-ruijin-hospital.jpg" alt="上海瑞金医院"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="hospital_3_type">公立三甲综合医院</p>
+                <h3 data-i18n="hospital_3_name">上海瑞金医院（上海交通大学医学院附属）</h3>
+                <p data-i18n="hospital_3_desc">瑞金医院是上海重要综合性医院，在内分泌代谢、血液、消化、感染与疑难复杂疾病综合管理方面经验丰富。</p>
+                <div class="network-field"><span class="network-field-label" data-i18n="card_field_strengths">优势方向</span><div class="network-card-tags"><span data-i18n="hospital_3_tag_1">内分泌</span><span data-i18n="hospital_3_tag_2">血液</span><span data-i18n="hospital_3_tag_3">消化</span><span data-i18n="hospital_3_tag_4">疑难病</span></div></div>
+              </div>
+            </article>
+<article class="network-card hospital-card">
+              <div class="network-card-image"><img src="./assets/xian-jiaotong-first-affiliated-hospital.png" alt="西安交通大学第一附属医院"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="hospital_4_type">公立三甲综合医院</p>
+                <h3 data-i18n="hospital_4_name">西安交通大学第一附属医院</h3>
+                <p data-i18n="hospital_4_desc">西北地区重点综合医院之一，在肝胆外科、消化、肿瘤以及心内、心外等复杂专科诊疗方面具备较强能力。</p>
+                <div class="network-field"><span class="network-field-label" data-i18n="card_field_strengths">优势方向</span><div class="network-card-tags"><span data-i18n="hospital_4_tag_1">肝胆外</span><span data-i18n="hospital_4_tag_2">消化</span><span data-i18n="hospital_4_tag_3">肿瘤</span><span data-i18n="hospital_4_tag_4">心内/心外</span></div></div>
+              </div>
+            </article>
+<article class="network-card hospital-card">
+              <div class="network-card-image"><img src="./assets/guangdong-provincial-people-hospital.png" alt="广东省人民医院"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="hospital_5_type">公立三甲综合医院</p>
+                <h3 data-i18n="hospital_5_name">广东省人民医院（南方医科大学附属）</h3>
+                <p data-i18n="hospital_5_desc">华南地区重要综合医疗中心，在神经、心脏和肺部相关疾病诊疗方面具备突出资源，适合复杂病例评估与跨科协作。</p>
+                <div class="network-field"><span class="network-field-label" data-i18n="card_field_strengths">优势方向</span><div class="network-card-tags"><span data-i18n="hospital_5_tag_1">神经</span><span data-i18n="hospital_5_tag_2">心脏</span><span data-i18n="hospital_5_tag_3">肺</span><span data-i18n="hospital_5_tag_4">复杂病例</span></div></div>
+              </div>
+            </article>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-control carousel-control-prev" type="button" aria-label="Previous hospitals" data-carousel-prev>
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg>
+                </button>
+                <div class="carousel-dots" aria-hidden="true">
+                <span class="is-active"></span><span></span><span></span><span></span><span></span>
+              </div>
+                <button class="carousel-control carousel-control-next" type="button" aria-label="Next hospitals" data-carousel-next>
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-panel" id="doctor-highlights" role="tabpanel" aria-labelledby="tab-doctors" hidden>
+            <div class="carousel-shell">
+              <div class="network-carousel" aria-label="Doctors highlights">
+<article class="network-card doctor-card">
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xia-qiang.jpg" alt="夏强医生"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="doctor_1_hospital">上海仁济医院</p>
+                <h3 data-i18n="doctor_1_name">夏强 医生</h3>
+                <p class="doctor-focus" data-i18n="doctor_1_focus">肝移植、儿童肝移植、肝胆外科</p>
+                <p data-i18n="doctor_1_note">适合需要肝移植可行性评估、复杂肝胆疾病意见或儿童肝病治疗路径讨论的国际患者。</p>
+              </div>
+            </article>
+<article class="network-card doctor-card">
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-fan-jia.jpeg" alt="樊嘉医生"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="doctor_2_hospital">上海中山医院</p>
+                <h3 data-i18n="doctor_2_name">樊嘉 医生</h3>
+                <p class="doctor-focus" data-i18n="doctor_2_focus">肝癌外科、肝脏肿瘤综合治疗、MDT评估</p>
+                <p data-i18n="doctor_2_note">适合肝脏肿瘤、肝癌手术方案、综合治疗路径和二诊评估需求。</p>
+              </div>
+            </article>
+<article class="network-card doctor-card">
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xia-peng.png" alt="夏鹏医生"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="doctor_3_hospital">西安交通大学第一附属医院</p>
+                <h3 data-i18n="doctor_3_name">夏鹏 医生</h3>
+                <p class="doctor-focus" data-i18n="doctor_3_focus">胃肠道肿瘤、机器人与腹腔镜微创手术</p>
+                <p data-i18n="doctor_3_note">擅长胃癌、结直肠癌等胃肠道肿瘤的微创根治手术，专注于机器人和腹腔镜微创治疗路径评估。</p>
+              </div>
+            </article>
+<article class="network-card doctor-card">
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-che-xiangming.png" alt="车向明医生"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="doctor_4_hospital">西安交通大学第一附属医院</p>
+                <h3 data-i18n="doctor_4_name">车向明 医生</h3>
+                <p class="doctor-focus" data-i18n="doctor_4_focus">胃肠道肿瘤、微创根治手术、复发再手术</p>
+                <p data-i18n="doctor_4_note">擅长胃癌、结直肠癌等胃肠道肿瘤微创根治手术，以及胃肠道肿瘤复发后的再手术评估。</p>
+              </div>
+            </article>
+<article class="network-card doctor-card">
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xue-hui.png" alt="薛挥医生"></div>
+              <div class="network-card-body">
+                <p class="network-card-type" data-i18n="doctor_5_hospital">西安交通大学第一附属医院</p>
+                <h3 data-i18n="doctor_5_name">薛挥 医生</h3>
+                <p class="doctor-focus" data-i18n="doctor_5_focus">慢性肝病、自身免疫性肝病、门静脉高压症</p>
+                <p data-i18n="doctor_5_note">主治慢性肝病、自身免疫性肝病（PBC、AIH、PSC）、肝硬化及非硬化性门静脉高压症（HSOS、PSVD）。</p>
+              </div>
+            </article>
+              </div>
+              <div class="carousel-controls">
+                <button class="carousel-control carousel-control-prev" type="button" aria-label="Previous doctors" data-carousel-prev>
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"></path></svg>
+                </button>
+                <div class="carousel-dots" aria-hidden="true">
+                <span class="is-active"></span><span></span><span></span><span></span><span></span>
+              </div>
+                <button class="carousel-control carousel-control-next" type="button" aria-label="Next doctors" data-carousel-next>
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"></path></svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="journey section" id="journey">
         <div class="section-heading">
-          <p class="section-kicker" data-i18n="journey_kicker">Patient Journey</p>
+          <p class="section-kicker" data-i18n="journey_kicker">服务流程</p>
           <h2 data-i18n="journey_title">从首次咨询到回国复诊的六步流程</h2>
         </div>
 
-        <ol class="timeline">
-          <li>
-            <span>1</span>
-            <div>
-              <h3 data-i18n="step_1_title">提交病例</h3>
-              <p data-i18n="step_1_copy">上传诊断、检查、影像和治疗记录，说明目标、预算、语言和期望城市。</p>
-            </div>
-          </li>
-          <li>
-            <span>2</span>
-            <div>
-              <h3 data-i18n="step_2_title">医学资料审核</h3>
-              <p data-i18n="step_2_copy">个案经理与医学顾问确认资料完整性，必要时补充检查或翻译。</p>
-            </div>
-          </li>
-          <li>
-            <span>3</span>
-            <div>
-              <h3 data-i18n="step_3_title">匹配医院医生</h3>
-              <p data-i18n="step_3_copy">提供可选医院、医生方向、预计时间、费用范围和所需材料。</p>
-            </div>
-          </li>
-          <li>
-            <span>4</span>
-            <div>
-              <h3 data-i18n="step_4_title">远程会诊确认</h3>
-              <p data-i18n="step_4_copy">协助线上问诊、翻译沟通和方案解释，确认是否适合来华治疗。</p>
-            </div>
-          </li>
-          <li>
-            <span>5</span>
-            <div>
-              <h3 data-i18n="step_5_title">来华就医执行</h3>
-              <p data-i18n="step_5_copy">安排接机、住宿、预约、陪诊、支付协调和住院期间家属沟通。</p>
-            </div>
-          </li>
-          <li>
-            <span>6</span>
-            <div>
-              <h3 data-i18n="step_6_title">回国随访</h3>
-              <p data-i18n="step_6_copy">提供双语医疗文件、复查提醒和远程复诊，帮助衔接本地医生。</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="care-model section">
-        <div class="care-image">
-          <img
-            src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&q=82"
-            alt="Medical team discussing patient records"
-          />
-        </div>
-        <div class="care-copy">
-          <p class="section-kicker" data-i18n="care_kicker">Care Model</p>
-          <h2 data-i18n="care_title">一个患者，一个跨文化医疗协调团队</h2>
-          <div class="role-grid">
-            <div>
-              <strong data-i18n="role_1_title">个案经理</strong>
-              <p data-i18n="role_1_copy">管理时间线、资料、费用清单和医院沟通。</p>
-            </div>
-            <div>
-              <strong data-i18n="role_2_title">医学翻译</strong>
-              <p data-i18n="role_2_copy">处理病历、会诊、查房和出院资料翻译。</p>
-            </div>
-            <div>
-              <strong data-i18n="role_3_title">行程协调</strong>
-              <p data-i18n="role_3_copy">协助签证材料、住宿、交通和家属安排。</p>
-            </div>
-            <div>
-              <strong data-i18n="role_4_title">随访支持</strong>
-              <p data-i18n="role_4_copy">跟进复查节点、远程复诊和回国后的沟通。</p>
-            </div>
+        <div class="process-widget" data-process-widget>
+          <div class="process-stepper" role="tablist" aria-label="Patient journey steps">
+            <button class="process-step is-active" type="button" role="tab" aria-selected="true" data-step="1">
+              <span>1</span><strong data-i18n="step_1_title">免费评估</strong>
+            </button>
+            <button class="process-step" type="button" role="tab" aria-selected="false" data-step="2">
+              <span>2</span><strong data-i18n="step_2_title">医学审核与医生匹配</strong>
+            </button>
+            <button class="process-step" type="button" role="tab" aria-selected="false" data-step="3">
+              <span>3</span><strong data-i18n="step_3_title">预约与行程支持</strong>
+            </button>
+            <button class="process-step" type="button" role="tab" aria-selected="false" data-step="4">
+              <span>4</span><strong data-i18n="step_4_title">抵达中国</strong>
+            </button>
+            <button class="process-step" type="button" role="tab" aria-selected="false" data-step="5">
+              <span>5</span><strong data-i18n="step_5_title">治疗</strong>
+            </button>
+            <button class="process-step" type="button" role="tab" aria-selected="false" data-step="6">
+              <span>6</span><strong data-i18n="step_6_title">回国随访</strong>
+            </button>
           </div>
+
+          <div class="process-detail" aria-live="polite">
+            <div class="process-detail-copy">
+              <span class="process-detail-number">01</span>
+              <div>
+                <h3 data-process-title data-i18n="step_1_title">Free Assessment</h3>
+                <p data-process-copy data-i18n="step_1_copy">Contact us and share diagnosis, test results, imaging, and treatment records so we can understand your goals and language needs.</p>
+                <ul class="process-detail-bullets" data-process-bullets hidden></ul>
+              </div>
+            </div>
+            <div class="process-visual" aria-hidden="true">
+              <img data-process-image data-step-image="1" src="./assets/journey-chinese-doctor-review.png" alt="" />
+</div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials section" id="testimonials">
+        <div class="section-heading">
+          <p class="section-kicker" data-i18n="testimonials_kicker">用户最看重的支持</p>
+          <h2 data-i18n="testimonials_title">让跨境就医更清晰、更安心</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p data-i18n="testimonial_1_copy">“从资料整理到医生匹配，每一步都有人解释清楚。我们知道接下来要准备什么，也知道预计时间和费用范围。”</p>
+            <div>
+              <strong><span data-i18n="testimonial_1_name">加拿大访客家属</span><span class="flag flag-ca" aria-label="Canada"></span></strong>
+              <span data-i18n="testimonial_1_meta">医学资料审核与方案匹配</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p data-i18n="testimonial_2_copy">“抵达上海后，接机、入住和第一次医院就诊都安排得很顺。现场翻译让我们和医生沟通时安心很多。”</p>
+            <div>
+              <strong><span data-i18n="testimonial_2_name">法国访客</span><span class="flag flag-fr" aria-label="France"></span></strong>
+              <span data-i18n="testimonial_2_meta">抵达支持与陪诊翻译</span>
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <p data-i18n="testimonial_3_copy">“回国前收到整理好的中英文文件和账单，后续也能继续问问题，和本地医生交接更顺利。”</p>
+            <div>
+              <strong><span data-i18n="testimonial_3_name">美国访客</span><span class="flag flag-us" aria-label="United States"></span></strong>
+              <span data-i18n="testimonial_3_meta">文件整理与回国随访</span>
+            </div>
+          </article>
         </div>
       </section>
 
       <section class="contact section" id="contact">
         <div class="contact-copy">
-          <p class="section-kicker" data-i18n="contact_kicker">Start Here</p>
-          <h2 data-i18n="contact_title">提交基础信息，获取初步就医路径建议</h2>
+          <p class="section-kicker" data-i18n="contact_kicker">免费评估</p>
+          <h2 data-i18n="contact_title">提交信息，24小时内获取初步评估</h2>
           <p data-i18n="contact_copy">
-            请简要描述疾病、所在国家、希望来华时间和已有资料。我们会先判断是否需要补充病历，再给出下一步沟通方式。
+            简要描述您的情况，分享可用资料和其他相关信息，我们将免费评估中国医疗是否适合您，并建议下一步。
           </p>
           <ul class="check-list">
-            <li data-i18n="check_1">不会替代医生诊断或急救服务</li>
-            <li data-i18n="check_2">费用、预约与治疗方案以医院确认为准</li>
-            <li data-i18n="check_3">患者资料仅用于医疗协调与评估沟通</li>
+            <li data-i18n="check_1">24小时内提供初步评估反馈</li>
+            <li data-i18n="check_2">医院匹配选项</li>
+            <li data-i18n="check_3">预估时间线与费用范围</li>
+            <li data-i18n="check_4">下一步流程介绍</li>
+          </ul>
+          <ul class="disclaimer-list">
+            <li data-i18n="disclaimer_1">该评估不能替代医生诊断或急救服务。</li>
+            <li data-i18n="disclaimer_2">所有资料仅用于医学审核与协调，并遵循隐私政策。</li>
           </ul>
         </div>
 
         <form class="contact-form" id="consultation-form">
-          <label>
-            <span data-i18n="form_name">姓名</span>
-            <input name="name" type="text" placeholder="Maria Chen" required />
+          <label class="required-field">
+            <span data-i18n="form_first_name">名</span>
+            <input name="first_name" type="text" placeholder="Maria" required />
           </label>
-          <label>
-            <span data-i18n="form_contact">邮箱或 WhatsApp</span>
-            <input name="contact" type="text" placeholder="+1 555 0100 / email@example.com" required />
+          <label class="required-field">
+            <span data-i18n="form_last_name">姓</span>
+            <input name="last_name" type="text" placeholder="Chen" required />
           </label>
-          <label>
+          <label class="required-field">
+            <span data-i18n="form_email">邮箱</span>
+            <input name="email" type="email" placeholder="email@example.com" required />
+          </label>
+          <label class="required-field">
+            <span data-i18n="form_whatsapp">WhatsApp</span>
+            <input name="whatsapp" type="tel" placeholder="+1 555 0100" required />
+          </label>
+          <label class="required-field">
             <span data-i18n="form_country">所在国家</span>
-            <input name="country" type="text" placeholder="United States" />
+            <input name="country" type="text" placeholder="United States" required />
           </label>
-          <label>
+          <label class="required-field">
             <span data-i18n="form_specialty">需要咨询的方向</span>
-            <select name="specialty">
-              <option data-i18n="option_oncology">肿瘤/癌症</option>
-              <option data-i18n="option_cardiology">心血管</option>
-              <option data-i18n="option_orthopedics">骨科</option>
-              <option data-i18n="option_neuro">神经科</option>
+            <select name="specialty" required>
+              <option data-i18n="specialty_area_1">体检和健康管理</option>
+              <option data-i18n="specialty_area_2">心血管疾病</option>
+              <option data-i18n="specialty_area_3">消化系统疾病</option>
+              <option data-i18n="specialty_area_4">内分泌与代谢疾病</option>
+              <option data-i18n="specialty_area_5">神经系统疾病</option>
+              <option data-i18n="specialty_area_6">呼吸系统疾病</option>
+              <option data-i18n="specialty_area_7">骨科与运动科学</option>
+              <option data-i18n="specialty_area_8">妇科疾病</option>
+              <option data-i18n="specialty_area_9">产科、生殖与产后修复</option>
+              <option data-i18n="specialty_area_10">肾脏及泌尿系统</option>
+              <option data-i18n="specialty_area_11">中西医结合及康复医学</option>
+              <option data-i18n="specialty_area_12">儿科疾病</option>
+              <option data-i18n="specialty_area_13">中医调理及康养</option>
               <option data-i18n="option_other">其他</option>
             </select>
           </label>
-          <label class="full">
-            <span data-i18n="form_message">病例简述</span>
-            <textarea name="message" rows="5" placeholder="Diagnosis, current treatment, expected travel date"></textarea>
+          <label class="full required-field">
+            <span data-i18n="form_message">情况简述</span>
+            <textarea name="message" rows="5" placeholder="Diagnosis, current treatment, expected travel date" required></textarea>
           </label>
-          <button class="button full" type="submit" data-i18n="form_submit">发送评估请求</button>
+          <label class="full file-field">
+            <span data-i18n="form_files">可选附件</span>
+            <input name="documents" type="file" multiple />
+            <small data-i18n="form_files_hint">可上传病历、检查结果、影像报告或保险文件。</small>
+          </label>
+          <label class="full consent-field required-field">
+            <input name="privacy_consent" type="checkbox" required />
+            <span data-i18n="form_privacy">我同意 AetherMed 按隐私政策使用我的资料进行免费评估与医疗协调。</span>
+          </label>
+          <button class="button full" type="submit" data-i18n="form_submit">发送免费评估请求</button>
           <p class="form-status" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div>
-        <strong>aethermed.health</strong>
-        <p data-i18n="footer_copy">International patient coordination for medical care in China.</p>
+      <div class="footer-brand-block">
+        <div class="footer-brand-row">
+          <img src="./assets/aethermed-logo.png" alt="AetherMed logo" />
+          <strong>AetherMed</strong>
+        </div>
+        <p data-i18n="footer_copy">我们为国际访客协调中国医疗资源，覆盖免费评估、医院与医生匹配、预约行程、在华陪诊翻译和回国随访文件支持。</p>
       </div>
-      <div class="footer-links">
-        <a href="#services" data-i18n="footer_services">Services</a>
-        <a href="#network" data-i18n="footer_network">Network</a>
-        <a href="#contact" data-i18n="footer_contact">Contact</a>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#why" data-i18n="footer_services">服务项目</a>
+        <a href="#network" data-i18n="footer_network">医院与医生</a>
+        <a href="#journey" data-i18n="footer_journey">服务流程</a>
+        <a href="#contact" data-i18n="footer_contact">联系我们</a>
+        <a href="#" data-i18n="footer_privacy">隐私政策</a>
+        <a href="#" data-i18n="footer_terms">服务条款</a>
+      </nav>
+      <div class="footer-offices">
+        <div>
+          <strong data-i18n="footer_china_office">中国办公室</strong>
+          <p data-i18n="footer_china_address">上海，中国</p>
+        </div>
+        <div>
+          <strong data-i18n="footer_canada_office">加拿大办公室</strong>
+          <p data-i18n="footer_canada_address">多伦多，加拿大</p>
+        </div>
+        <div>
+          <strong data-i18n="footer_email_label">咨询邮箱</strong>
+          <p><a href="mailto:info@aethermed.health">info@aethermed.health</a></p>
+        </div>
       </div>
+      <p class="footer-rights" data-i18n="footer_rights">© 2026 AetherMed. 保留所有权利。</p>
     </footer>
 
     <script src="./script.js"></script>
   </body>
 </html>
+
+
+
+
