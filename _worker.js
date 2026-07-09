@@ -66,9 +66,7 @@ function renderEmailHtml(fields, files) {
   `;
 }
 
-export async function onRequestPost(context) {
-  const { request, env } = context;
-
+async function handleContactPost(request, env) {
   if (!env.RESEND_API_KEY) {
     return jsonResponse({ error: "Email service is not configured." }, 500);
   }
@@ -128,6 +126,22 @@ export async function onRequestPost(context) {
   return jsonResponse({ ok: true });
 }
 
-export function onRequestGet() {
-  return jsonResponse({ ok: true, endpoint: "AetherMed contact form" });
-}
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+
+    if (url.pathname === "/api/contact") {
+      if (request.method === "GET") {
+        return jsonResponse({ ok: true, endpoint: "AetherMed contact form" });
+      }
+
+      if (request.method === "POST") {
+        return handleContactPost(request, env);
+      }
+
+      return jsonResponse({ error: "Method not allowed." }, 405);
+    }
+
+    return env.ASSETS.fetch(request);
+  }
+};

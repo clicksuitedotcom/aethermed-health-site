@@ -123,13 +123,13 @@ www.aethermed.health
 
 ## Contact Form Email
 
-The website contact form posts to a Cloudflare Pages Function:
+The website contact form posts to the Cloudflare Worker endpoint:
 
 ```text
 /api/contact
 ```
 
-The function sends form submissions through Resend. Configure these environment variables in Cloudflare Pages:
+The Worker sends form submissions through Resend. Configure these environment variables in Cloudflare:
 
 ```text
 RESEND_API_KEY=your_resend_api_key
