@@ -33,6 +33,7 @@ function renderEmailHtml(fields, files) {
     ["Country", fields.country],
     ["Specialty", fields.specialty],
     ["Privacy consent", fields.privacyConsent ? "Yes" : "No"],
+    ["Configured recipient", DEFAULT_TO_EMAIL],
     ["Submitted at", new Date().toISOString()]
   ];
 
@@ -117,7 +118,7 @@ async function handleContactPost(request, env) {
     return jsonResponse({ error: "Email delivery failed.", detail }, 502);
   }
 
-  return jsonResponse({ ok: true });
+  return jsonResponse({ ok: true, recipient: DEFAULT_TO_EMAIL });
 }
 
 export default {
@@ -126,7 +127,7 @@ export default {
 
     if (url.pathname === "/api/contact") {
       if (request.method === "GET") {
-        return jsonResponse({ ok: true, endpoint: "AetherMed contact form" });
+        return jsonResponse({ ok: true, endpoint: "AetherMed contact form", recipient: DEFAULT_TO_EMAIL });
       }
 
       if (request.method === "POST") {
