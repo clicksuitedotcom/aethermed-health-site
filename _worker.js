@@ -1,5 +1,5 @@
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
-const DEFAULT_TO_EMAIL = "info@aethermed.health";
+const DEFAULT_TO_EMAIL = "hu.bai@aethermed.health";
 const DEFAULT_FROM_EMAIL = "AetherMed Website <no-reply@aethermed.health>";
 
 function escapeHtml(value) {
