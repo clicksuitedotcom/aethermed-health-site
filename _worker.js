@@ -94,7 +94,6 @@ async function handleContactPost(request, env) {
 
   const toEmail = env.CONTACT_TO_EMAIL || DEFAULT_TO_EMAIL;
   const fromEmail = env.CONTACT_FROM_EMAIL || DEFAULT_FROM_EMAIL;
-  const ccEmail = env.CONTACT_CC_EMAIL;
   const subject = `New AetherMed inquiry: ${fields.firstName} ${fields.lastName} - ${fields.country}`;
 
   const payload = {
@@ -104,10 +103,6 @@ async function handleContactPost(request, env) {
     html: renderEmailHtml(fields, files),
     reply_to: fields.email
   };
-
-  if (ccEmail) {
-    payload.cc = [ccEmail];
-  }
 
   const response = await fetch(RESEND_ENDPOINT, {
     method: "POST",

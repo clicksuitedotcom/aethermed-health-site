@@ -211,7 +211,7 @@ const translations = {
     footer_email_label: "咨询邮箱",
     footer_rights: "© 2026 AetherMed. 保留所有权利。",
     status_sending: "正在发送，请稍候...",
-    status_success: "已收到您的信息，我们会尽快通过邮箱或 WhatsApp 与您联系。",
+    status_success: "已收到您的评估请求。AetherMed 医疗协调团队会尽快通过邮箱或 WhatsApp 与您联系。",
     status_error: "发送失败，请稍后重试，或直接发送邮件至 info@aethermed.health。"
   },
   en: {
@@ -426,7 +426,7 @@ const translations = {
     footer_email_label: "Email",
     footer_rights: "© 2026 AetherMed. All rights reserved.",
     status_sending: "Sending your request...",
-    status_success: "Your information has been received. We will contact you by email or WhatsApp soon.",
+    status_success: "Your assessment request has been received. The AetherMed care coordination team will contact you by email or WhatsApp soon.",
     status_error: "Submission failed. Please try again later or email info@aethermed.health directly."
   }
 };
