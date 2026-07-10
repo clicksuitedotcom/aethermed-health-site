@@ -92,13 +92,12 @@ async function handleContactPost(request, env) {
     .filter((file) => typeof file === "object" && file && "name" in file && file.name)
     .map((file) => ({ name: file.name, size: file.size || 0 }));
 
-  const toEmail = env.CONTACT_TO_EMAIL || DEFAULT_TO_EMAIL;
   const fromEmail = env.CONTACT_FROM_EMAIL || DEFAULT_FROM_EMAIL;
   const subject = `New AetherMed inquiry: ${fields.firstName} ${fields.lastName} - ${fields.country}`;
 
   const payload = {
     from: fromEmail,
-    to: [toEmail],
+    to: [DEFAULT_TO_EMAIL],
     subject,
     html: renderEmailHtml(fields, files),
     reply_to: fields.email

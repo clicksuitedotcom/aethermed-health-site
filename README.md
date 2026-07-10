@@ -133,7 +133,6 @@ The Worker sends form submissions through Resend. Configure these environment va
 
 ```text
 RESEND_API_KEY=your_resend_api_key
-CONTACT_TO_EMAIL=info@aethermed.health
 CONTACT_FROM_EMAIL=AetherMed Website <no-reply@aethermed.health>
 ```
 
