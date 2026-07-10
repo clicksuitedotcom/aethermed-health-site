@@ -138,7 +138,7 @@ CONTACT_FROM_EMAIL=AetherMed Website <no-reply@aethermed.health>
 
 The sender domain should be verified in Resend before production use.
 
-For privacy and deliverability, uploaded medical files are not forwarded as email attachments. The email includes the uploaded file names so the team can follow up through a secure channel if documents are needed.
+Uploaded medical files are sent as email attachments when the total attachment size is under 15 MB. The email body also includes the uploaded file names for quick reference.
 
 ## DNS Notes
 

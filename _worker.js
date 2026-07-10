@@ -1,6 +1,7 @@
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const DEFAULT_TO_EMAIL = "info@aethermed.health";
 const DEFAULT_FROM_EMAIL = "AetherMed Website <no-reply@aethermed.health>";
+const MAX_ATTACHMENT_BYTES = 15 * 1024 * 1024;
 
 function escapeHtml(value) {
   return String(value || "")
@@ -25,6 +26,19 @@ function jsonResponse(body, status = 200) {
   });
 }
 
+function base64FromArrayBuffer(buffer) {
+  const bytes = new Uint8Array(buffer);
+  let binary = "";
+  const chunkSize = 0x8000;
+
+  for (let index = 0; index < bytes.length; index += chunkSize) {
+    const chunk = bytes.subarray(index, index + chunkSize);
+    binary += String.fromCharCode(...chunk);
+  }
+
+  return btoa(binary);
+}
+
 function renderEmailHtml(fields, files) {
   const rows = [
     ["Name", `${fields.firstName} ${fields.lastName}`.trim()],
@@ -33,7 +47,6 @@ function renderEmailHtml(fields, files) {
     ["Country", fields.country],
     ["Specialty", fields.specialty],
     ["Privacy consent", fields.privacyConsent ? "Yes" : "No"],
-    ["Configured recipient", DEFAULT_TO_EMAIL],
     ["Submitted at", new Date().toISOString()]
   ];
 
@@ -58,13 +71,40 @@ function renderEmailHtml(fields, files) {
       </table>
       <h2 style="font-size:18px;margin:22px 0 8px">Condition Summary</h2>
       <p style="white-space:pre-wrap;border:1px solid #d9e5eb;background:#f8fbfc;padding:12px">${escapeHtml(fields.message)}</p>
-      <h2 style="font-size:18px;margin:22px 0 8px">Uploaded File Names</h2>
+      <h2 style="font-size:18px;margin:22px 0 8px">Uploaded Attachments</h2>
       ${fileList}
       <p style="color:#617282;font-size:13px;margin-top:24px">
-        This email was generated from the AetherMed website contact form. Medical file attachments are not forwarded by email; follow up with the patient using a secure channel if documents are needed.
+        This email was generated from the AetherMed website contact form. Please handle medical documents as confidential patient information.
       </p>
     </div>
   `;
+}
+
+async function collectAttachments(formData) {
+  const uploadedFiles = formData
+    .getAll("documents")
+    .filter((file) => typeof file === "object" && file && "name" in file && file.name);
+
+  const totalSize = uploadedFiles.reduce((sum, file) => sum + (file.size || 0), 0);
+
+  if (totalSize > MAX_ATTACHMENT_BYTES) {
+    return {
+      error: `Uploaded files exceed the ${Math.round(MAX_ATTACHMENT_BYTES / 1024 / 1024)} MB email attachment limit.`
+    };
+  }
+
+  const files = [];
+  const attachments = [];
+
+  for (const file of uploadedFiles) {
+    files.push({ name: file.name, size: file.size || 0 });
+    attachments.push({
+      filename: file.name,
+      content: base64FromArrayBuffer(await file.arrayBuffer())
+    });
+  }
+
+  return { files, attachments };
 }
 
 async function handleContactPost(request, env) {
@@ -88,10 +128,13 @@ async function handleContactPost(request, env) {
     return jsonResponse({ error: "Missing required form fields." }, 400);
   }
 
-  const files = formData
-    .getAll("documents")
-    .filter((file) => typeof file === "object" && file && "name" in file && file.name)
-    .map((file) => ({ name: file.name, size: file.size || 0 }));
+  const attachmentResult = await collectAttachments(formData);
+
+  if (attachmentResult.error) {
+    return jsonResponse({ error: attachmentResult.error }, 413);
+  }
+
+  const { files, attachments } = attachmentResult;
 
   const fromEmail = env.CONTACT_FROM_EMAIL || DEFAULT_FROM_EMAIL;
   const subject = `New AetherMed inquiry: ${fields.firstName} ${fields.lastName} - ${fields.country}`;
@@ -103,6 +146,10 @@ async function handleContactPost(request, env) {
     html: renderEmailHtml(fields, files),
     reply_to: fields.email
   };
+
+  if (attachments.length) {
+    payload.attachments = attachments;
+  }
 
   const response = await fetch(RESEND_ENDPOINT, {
     method: "POST",
@@ -118,7 +165,7 @@ async function handleContactPost(request, env) {
     return jsonResponse({ error: "Email delivery failed.", detail }, 502);
   }
 
-  return jsonResponse({ ok: true, recipient: DEFAULT_TO_EMAIL });
+  return jsonResponse({ ok: true, recipient: DEFAULT_TO_EMAIL, attachments: attachments.length });
 }
 
 export default {
