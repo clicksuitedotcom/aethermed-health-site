@@ -569,12 +569,12 @@ document.querySelectorAll(".carousel-shell").forEach((shell) => {
 
 
 const processStepImages = [
+  "assets/journey-step-1.avif",
   "assets/journey-chinese-doctor-review.png",
-  "assets/doctor-fan-jia.jpeg",
-  "assets/hero-medical-travel-v2.png",
+  "assets/journey-step-3.avif",
   "assets/shanghai-skyline.jpg",
-  "assets/shanghai-renji-hospital.png",
-  "assets/doctor-xia-qiang.jpg"
+  "assets/journey-step-5.avif",
+  "assets/journey-step-6.avif"
 ];
 
 const processStepData = [1, 2, 3, 4, 5, 6].map((step) => ({
