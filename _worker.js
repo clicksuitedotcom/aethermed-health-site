@@ -2,6 +2,11 @@ const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const DEFAULT_TO_EMAIL = "info@aethermed.health";
 const DEFAULT_FROM_EMAIL = "AetherMed Website <no-reply@aethermed.health>";
 const MAX_ATTACHMENT_BYTES = 15 * 1024 * 1024;
+const ROBOTS_TXT = `User-agent: *
+Allow: /
+
+Sitemap: https://aethermed.health/sitemap.xml
+`;
 
 function escapeHtml(value) {
   return String(value || "")
@@ -22,6 +27,14 @@ function jsonResponse(body, status = 200) {
     status,
     headers: {
       "Content-Type": "application/json; charset=utf-8"
+    }
+  });
+}
+
+function textResponse(body, contentType = "text/plain; charset=utf-8") {
+  return new Response(body, {
+    headers: {
+      "Content-Type": contentType
     }
   });
 }
@@ -182,6 +195,10 @@ export default {
       }
 
       return jsonResponse({ error: "Method not allowed." }, 405);
+    }
+
+    if (url.pathname === "/robots.txt") {
+      return textResponse(ROBOTS_TXT);
     }
 
     return env.ASSETS.fetch(request);

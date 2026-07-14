@@ -8,9 +8,106 @@
       name="description"
       content="AetherMed Health helps international patients connect with leading hospitals and doctors in China, coordinating second opinions, travel, admission, interpretation, and follow-up care."
     />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://aethermed.health/" />
+    <link rel="alternate" hreflang="en" href="https://aethermed.health/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://aethermed.health/" />
+    <link rel="alternate" hreflang="x-default" href="https://aethermed.health/" />
+    <meta property="og:site_name" content="AetherMed Health" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AetherMed Health | International Medical Services in China" />
+    <meta property="og:description" content="Connect with leading hospitals and doctors in China for second opinions, appointments, travel support, interpretation, and follow-up care." />
+    <meta property="og:url" content="https://aethermed.health/" />
+    <meta property="og:image" content="https://aethermed.health/assets/hero-medical-travel-v2.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AetherMed Health | International Medical Services in China" />
+    <meta name="twitter:description" content="International patient coordination for China's leading hospitals and doctors." />
+    <meta name="twitter:image" content="https://aethermed.health/assets/hero-medical-travel-v2.png" />
     <link rel="icon" type="image/png" href="./assets/aethermed-logo.png" />
     <link rel="apple-touch-icon" href="./assets/aethermed-logo.png" />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://aethermed.health/#organization",
+            "name": "AetherMed Health",
+            "alternateName": "AetherMed",
+            "url": "https://aethermed.health/",
+            "logo": "https://aethermed.health/assets/aethermed-logo.png",
+            "sameAs": [
+              "https://www.instagram.com/aethermed.health/"
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "info@aethermed.health",
+                "availableLanguage": ["English", "Chinese", "French"]
+              }
+            ]
+          },
+          {
+            "@type": "MedicalBusiness",
+            "@id": "https://aethermed.health/#medical-business",
+            "name": "AetherMed Health",
+            "url": "https://aethermed.health/",
+            "image": "https://aethermed.health/assets/hero-medical-travel-v2.png",
+            "description": "International patient coordination for access to leading hospitals and doctors in China.",
+            "email": "info@aethermed.health",
+            "parentOrganization": {
+              "@id": "https://aethermed.health/#organization"
+            },
+            "areaServed": [
+              "China",
+              "United States",
+              "Canada",
+              "Japan",
+              "Singapore",
+              "Europe"
+            ],
+            "medicalSpecialty": [
+              "Oncology",
+              "Cardiology",
+              "Hepatology",
+              "Orthopedic",
+              "Pediatrics",
+              "Rehabilitation"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://aethermed.health/#website",
+            "name": "AetherMed Health",
+            "url": "https://aethermed.health/",
+            "publisher": {
+              "@id": "https://aethermed.health/#organization"
+            },
+            "inLanguage": ["en", "zh-Hans"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://aethermed.health/#webpage",
+            "url": "https://aethermed.health/",
+            "name": "AetherMed Health | International Medical Services in China",
+            "description": "AetherMed Health helps international patients connect with leading hospitals and doctors in China.",
+            "isPartOf": {
+              "@id": "https://aethermed.health/#website"
+            },
+            "about": {
+              "@id": "https://aethermed.health/#medical-business"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://aethermed.health/assets/hero-medical-travel-v2.png"
+            },
+            "inLanguage": ["en", "zh-Hans"]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -197,7 +294,7 @@
             <div class="carousel-shell">
               <div class="network-carousel" aria-label="Partner hospitals">
 <article class="network-card hospital-card">
-              <div class="network-card-image"><img src="./assets/shanghai-renji-hospital.png" alt="上海仁济医院"></div>
+              <div class="network-card-image"><img src="./assets/shanghai-renji-hospital.png" alt="上海仁济医院" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="hospital_1_type">公立三甲综合医院</p>
                 <h3 data-i18n="hospital_1_name">上海仁济医院（上海交通大学医学院附属）</h3>
@@ -206,7 +303,7 @@
               </div>
             </article>
 <article class="network-card hospital-card">
-              <div class="network-card-image"><img src="./assets/shanghai-zhongshan-hospital.jpg" alt="上海中山医院"></div>
+              <div class="network-card-image"><img src="./assets/shanghai-zhongshan-hospital.jpg" alt="上海中山医院" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="hospital_2_type">公立三甲综合医院</p>
                 <h3 data-i18n="hospital_2_name">上海中山医院（复旦大学附属）</h3>
@@ -215,7 +312,7 @@
               </div>
             </article>
 <article class="network-card hospital-card">
-              <div class="network-card-image"><img src="./assets/shanghai-ruijin-hospital.jpg" alt="上海瑞金医院"></div>
+              <div class="network-card-image"><img src="./assets/shanghai-ruijin-hospital.jpg" alt="上海瑞金医院" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="hospital_3_type">公立三甲综合医院</p>
                 <h3 data-i18n="hospital_3_name">上海瑞金医院（上海交通大学医学院附属）</h3>
@@ -224,7 +321,7 @@
               </div>
             </article>
 <article class="network-card hospital-card">
-              <div class="network-card-image"><img src="./assets/xian-jiaotong-first-affiliated-hospital.png" alt="西安交通大学第一附属医院"></div>
+              <div class="network-card-image"><img src="./assets/xian-jiaotong-first-affiliated-hospital.png" alt="西安交通大学第一附属医院" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="hospital_4_type">公立三甲综合医院</p>
                 <h3 data-i18n="hospital_4_name">西安交通大学第一附属医院</h3>
@@ -233,7 +330,7 @@
               </div>
             </article>
 <article class="network-card hospital-card">
-              <div class="network-card-image"><img src="./assets/guangdong-provincial-people-hospital.png" alt="广东省人民医院"></div>
+              <div class="network-card-image"><img src="./assets/guangdong-provincial-people-hospital.png" alt="广东省人民医院" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="hospital_5_type">公立三甲综合医院</p>
                 <h3 data-i18n="hospital_5_name">广东省人民医院（南方医科大学附属）</h3>
@@ -260,7 +357,7 @@
             <div class="carousel-shell">
               <div class="network-carousel" aria-label="Doctors highlights">
 <article class="network-card doctor-card">
-              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xia-qiang.jpg" alt="夏强医生"></div>
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xia-qiang.jpg" alt="夏强医生" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="doctor_1_hospital">上海仁济医院</p>
                 <h3 data-i18n="doctor_1_name">夏强 医生</h3>
@@ -269,7 +366,7 @@
               </div>
             </article>
 <article class="network-card doctor-card">
-              <div class="doctor-photo-placeholder"><img src="./assets/doctor-fan-jia.jpeg" alt="樊嘉医生"></div>
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-fan-jia.jpeg" alt="樊嘉医生" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="doctor_2_hospital">上海中山医院</p>
                 <h3 data-i18n="doctor_2_name">樊嘉 医生</h3>
@@ -278,7 +375,7 @@
               </div>
             </article>
 <article class="network-card doctor-card">
-              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xia-peng.png" alt="夏鹏医生"></div>
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xia-peng.png" alt="夏鹏医生" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="doctor_3_hospital">西安交通大学第一附属医院</p>
                 <h3 data-i18n="doctor_3_name">夏鹏 医生</h3>
@@ -287,7 +384,7 @@
               </div>
             </article>
 <article class="network-card doctor-card">
-              <div class="doctor-photo-placeholder"><img src="./assets/doctor-che-xiangming.png" alt="车向明医生"></div>
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-che-xiangming.png" alt="车向明医生" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="doctor_4_hospital">西安交通大学第一附属医院</p>
                 <h3 data-i18n="doctor_4_name">车向明 医生</h3>
@@ -296,7 +393,7 @@
               </div>
             </article>
 <article class="network-card doctor-card">
-              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xue-hui.png" alt="薛挥医生"></div>
+              <div class="doctor-photo-placeholder"><img src="./assets/doctor-xue-hui.png" alt="薛挥医生" loading="lazy" decoding="async"></div>
               <div class="network-card-body">
                 <p class="network-card-type" data-i18n="doctor_5_hospital">西安交通大学第一附属医院</p>
                 <h3 data-i18n="doctor_5_name">薛挥 医生</h3>
@@ -359,7 +456,7 @@
               </div>
             </div>
             <div class="process-visual" aria-hidden="true">
-              <img data-process-image data-step-image="1" src="./assets/journey-step-1.avif" alt="" />
+              <img data-process-image data-step-image="1" src="./assets/journey-step-1.avif" alt="" loading="lazy" decoding="async" />
 </div>
           </div>
         </div>
@@ -475,7 +572,7 @@
     <footer class="site-footer">
       <div class="footer-brand-block">
         <div class="footer-brand-row">
-          <img src="./assets/aethermed-logo.png" alt="AetherMed logo" />
+          <img src="./assets/aethermed-logo.png" alt="AetherMed logo" loading="lazy" decoding="async" />
           <strong>AetherMed</strong>
         </div>
         <p data-i18n="footer_copy">我们为国际访客协调中国医疗资源，覆盖免费评估、医院与医生匹配、预约行程、在华陪诊翻译和回国随访文件支持。</p>
