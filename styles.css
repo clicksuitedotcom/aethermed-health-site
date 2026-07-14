@@ -1887,6 +1887,158 @@ main #testimonials .section-kicker {
   }
 }
 
+.guides-preview {
+  background: var(--surface);
+}
+
+.guides-preview .section-heading {
+  max-width: 900px;
+}
+
+.guide-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.guide-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+}
+
+.guide-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.guide-card div {
+  padding: 20px;
+}
+
+.guide-meta {
+  margin: 0 0 8px;
+  color: var(--coral);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.guide-card h2,
+.guide-card h3 {
+  margin: 0 0 10px;
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 1.2;
+}
+
+.guide-card p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.guide-card a {
+  color: var(--teal-dark);
+  font-weight: 850;
+}
+
+.guide-section-link {
+  width: fit-content;
+  margin-top: 24px;
+}
+
+.guide-page,
+.article-page {
+  background: var(--white);
+}
+
+.guide-hero,
+.article-layout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: clamp(70px, 8vw, 110px) clamp(20px, 5vw, 48px) clamp(44px, 6vw, 72px);
+}
+
+.guide-hero h1,
+.article-layout h1 {
+  max-width: 860px;
+  margin: 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 0.98;
+}
+
+.guide-hero > p:not(.section-kicker),
+.article-lede {
+  max-width: 780px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.55;
+}
+
+.guide-list-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 48px) clamp(70px, 8vw, 110px);
+}
+
+.article-hero-image {
+  height: min(440px, 52vw);
+  min-height: 260px;
+  margin: 34px 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.article-layout h2 {
+  margin: 38px 0 10px;
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.15;
+}
+
+.article-layout p,
+.article-layout li {
+  color: #33485a;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.article-layout ul {
+  padding-left: 24px;
+}
+
+.medical-disclaimer {
+  border-left: 4px solid var(--coral);
+  padding: 14px 16px;
+  color: #40576a;
+  background: #fff7f3;
+  font-weight: 700;
+}
+
+.article-cta {
+  margin-top: 42px;
+  padding: 28px;
+  border-radius: 8px;
+  color: var(--white);
+  background: #092a33;
+}
+
+.article-cta h2 {
+  margin-top: 0;
+  color: var(--white);
+}
+
+.article-cta p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (max-width: 900px) {
+  .guide-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* CSS testimonial flags */
 .testimonial-card strong {
