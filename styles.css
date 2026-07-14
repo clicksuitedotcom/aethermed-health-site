@@ -97,7 +97,7 @@ textarea {
 .brand strong,
 .brand small {
   display: block;
-  max-width: min(220px, 52vw);
+  max-width: min(320px, 58vw);
   overflow: hidden;
   color: var(--muted);
   font-size: 11px;
@@ -145,6 +145,7 @@ textarea {
   grid-area: nav;
   display: flex;
   justify-content: center;
+  min-width: 0;
   width: 100%;
   gap: clamp(24px, 5vw, 56px);
   padding-top: 6px;
@@ -1964,8 +1965,9 @@ main #testimonials .section-kicker {
 .article-layout h1 {
   max-width: 860px;
   margin: 0;
-  font-size: clamp(42px, 6vw, 72px);
-  line-height: 0.98;
+  overflow-wrap: anywhere;
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: 1.04;
 }
 
 .guide-hero > p:not(.section-kicker),
@@ -2400,7 +2402,7 @@ main #testimonials .section-kicker {
 /* Legal pages */
 .legal-header {
   grid-template-areas: "brand nav actions";
-  grid-template-columns: minmax(220px, 1fr) auto auto;
+  grid-template-columns: minmax(320px, 1fr) minmax(0, auto) auto;
 }
 
 .legal-header .main-nav {
@@ -2408,6 +2410,10 @@ main #testimonials .section-kicker {
   width: auto;
   padding-top: 0;
   gap: 28px;
+}
+
+.legal-header .brand small {
+  max-width: 320px;
 }
 
 .legal-page {
@@ -2535,7 +2541,7 @@ main #testimonials .section-kicker {
   line-height: 1.9;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1180px) {
   .legal-header {
     grid-template-areas:
       "brand actions"
@@ -2548,7 +2554,9 @@ main #testimonials .section-kicker {
     overflow-x: auto;
     justify-content: flex-start;
   }
+}
 
+@media (max-width: 760px) {
   .legal-hero {
     padding: 70px 18px 38px;
   }
