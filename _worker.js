@@ -8,6 +8,17 @@ Allow: /
 Sitemap: https://aethermed.health/sitemap.xml
 `;
 
+const REDIRECTS = new Map([
+  ["/guides", "/insights/"],
+  ["/guides/", "/insights/"],
+  ["/guides/china-second-medical-opinion.html", "/insights/medical-in-china/how-to-get-a-second-medical-opinion-in-china/"],
+  ["/guides/china-second-medical-opinion", "/insights/medical-in-china/how-to-get-a-second-medical-opinion-in-china/"],
+  ["/guides/prepare-medical-records-for-china.html", "/insights/medical-journey-guides/prepare-medical-records-for-china/"],
+  ["/guides/prepare-medical-records-for-china", "/insights/medical-journey-guides/prepare-medical-records-for-china/"],
+  ["/guides/international-patient-journey-china.html", "/insights/medical-journey-guides/international-patient-journey-china/"],
+  ["/guides/international-patient-journey-china", "/insights/medical-journey-guides/international-patient-journey-china/"]
+]);
+
 function escapeHtml(value) {
   return String(value || "")
     .replace(/&/g, "&amp;")
@@ -184,6 +195,11 @@ async function handleContactPost(request, env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const redirectTarget = REDIRECTS.get(url.pathname);
+
+    if (redirectTarget) {
+      return Response.redirect(new URL(redirectTarget, url.origin).toString(), 301);
+    }
 
     if (url.pathname === "/api/contact") {
       if (request.method === "GET") {

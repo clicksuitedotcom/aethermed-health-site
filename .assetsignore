@@ -2,6 +2,9 @@ _worker.js
 .git/
 .wrangler/
 README.md
+INSIGHTS_PUBLISHING.md
 .gitignore
 .assetsignore
 wrangler.toml
+scripts/
+guides/
