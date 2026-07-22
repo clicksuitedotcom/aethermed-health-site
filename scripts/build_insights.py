@@ -407,37 +407,33 @@ def render_home() -> None:
         <p>Explore clear, patient-focused articles on accessing hospitals and doctors in China, specialty treatment pathways, planning your medical journey, real patient experiences, and AetherMed updates.</p>
         <a class="button" href="../index.html#contact">Get a Free Assessment</a>
       </section>
-      <section class="insights-search-panel" aria-labelledby="insights-search-title">
-        <div>
-          <p class="section-kicker">Search Insights</p>
-          <h2 id="insights-search-title">Find patient guidance by topic</h2>
+      <section class="insights-browser" aria-label="AetherMed Insights browser">
+        <aside class="insights-sidebar" aria-label="Search and filters">
+          <div class="insights-sidebar-block">
+            <p class="section-kicker">Search</p>
+            <form class="insights-search-form" action="./search/" method="get" data-insights-search>
+              <label class="sr-only" for="insights-query">Search articles</label>
+              <input id="insights-query" name="q" type="search" placeholder="Search articles" autocomplete="off" />
+              <div class="insights-search-actions">
+                <button class="button button-small" type="submit">Search</button>
+                <button class="button button-small button-light" type="button" data-clear-search>Clear</button>
+              </div>
+            </form>
+            <p class="insights-search-status" aria-live="polite" data-search-status></p>
+          </div>
+          <div class="insights-sidebar-block">
+            <p class="section-kicker">Categories</p>
+            <div class="insight-category-list">{category_cards}</div>
+          </div>
+          <div class="insights-sidebar-block">
+            <p class="section-kicker">Tags</p>
+            <div class="insight-tag-cloud">{tag_cloud}</div>
+          </div>
+        </aside>
+        <div class="insights-article-feed">
+          <div class="section-heading compact-heading"><p class="section-kicker">Featured Insights</p><h2>Recently updated articles</h2></div>
+          <div class="insight-card-grid" data-search-results>{"".join(card(a, 1) for a in featured)}</div>
         </div>
-        <form class="insights-search-form" action="./search/" method="get" data-insights-search>
-          <label class="sr-only" for="insights-query">Search articles</label>
-          <input id="insights-query" name="q" type="search" placeholder="Search title, category, tags or summary" autocomplete="off" />
-          <button class="button" type="submit">Search</button>
-          <button class="button button-light" type="button" data-clear-search>Clear</button>
-        </form>
-        <p class="insights-search-status" aria-live="polite" data-search-status></p>
-      </section>
-      <section class="insights-section" aria-labelledby="browse-category">
-        <div class="section-heading">
-          <p class="section-kicker">Browse by Category</p>
-          <h2 id="browse-category">Explore the content library</h2>
-        </div>
-        <div class="insight-category-grid">{category_cards}</div>
-      </section>
-      <section class="insights-section" aria-labelledby="featured-insights">
-        <div class="section-heading"><p class="section-kicker">Featured Insights</p><h2 id="featured-insights">Start with these insights</h2></div>
-        <div class="insight-card-grid" data-search-results>{"".join(card(a, 1) for a in featured)}</div>
-      </section>
-      <section class="insights-section" aria-labelledby="latest-articles">
-        <div class="section-heading"><p class="section-kicker">Latest Articles</p><h2 id="latest-articles">Recently updated</h2></div>
-        <div class="insight-card-grid">{"".join(card(a, 1) for a in ARTICLES)}</div>
-      </section>
-      <section class="insights-section insights-tag-section" aria-labelledby="explore-tags">
-        <div class="section-heading"><p class="section-kicker">Explore by Tag</p><h2 id="explore-tags">Common topics</h2></div>
-        <div class="insight-tag-cloud">{tag_cloud}</div>
       </section>
       <section class="insights-cta">
         <h2>Not sure where to begin?</h2>
