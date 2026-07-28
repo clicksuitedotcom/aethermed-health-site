@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-07-22"
+TODAY = "2026-07-28"
 
 
 CATEGORIES = {
@@ -203,13 +203,52 @@ ARTICLES = [
         ],
         "cta": "Planning medical care in China? Share your condition, available records and preferred timing. AetherMed can outline possible hospital pathways and next steps.",
     },
+    {
+        "slug": "how-aethermed-free-assessment-works",
+        "title": "How AetherMed's Free Medical Assessment Works",
+        "description": "Learn how AetherMed's free assessment reviews your goals and medical records, identifies missing information, and outlines possible care pathways in China.",
+        "lede": "AetherMed's free medical assessment is an initial coordination review for international patients exploring medical treatment in China. It helps organize the key facts of your case, identify missing information, and understand whether there may be a practical hospital or specialist pathway in China.",
+        "primary_category": "medical-journey-guides",
+        "categories": ["medical-journey-guides", "medical-in-china"],
+        "tags": ["Medical Records", "Treatment Planning", "Case Management", "International Patients"],
+        "image": "aethermed-free-medical-assessment.webp",
+        "image_alt": "International patient reviewing a free medical assessment with an AetherMed coordinator.",
+        "published": "2026-07-28",
+        "updated": "2026-07-28",
+        "featured": True,
+        "sections": [
+            ("Who is the assessment for?", [
+                "The assessment is designed for international patients and families who are considering care in China but do not yet know which hospital, department, or specialist may fit their needs. It may be useful if you want to compare treatment options, seek a second opinion, explore a specialist service, or understand the practical steps before travel.",
+                "It is particularly helpful when you can explain your confirmed or suspected diagnosis, current symptoms, previous tests or medical opinions, what you hope to clarify or achieve in China, your preferred timing, language needs, travel constraints, and approximate budget.",
+            ]),
+            ("What should you submit?", [
+                "Start with a short medical summary and the most relevant recent reports. You do not need to send every document you have at the first step; the goal is to help the coordination team understand the case clearly enough to identify what may be missing.",
+                "Depending on the condition, useful files may include consultation notes, discharge summaries, pathology reports, laboratory results, imaging reports, and a current medication list. Original CT or MRI image files may be requested later.",
+                "Remove unrelated personal information where possible and use AetherMed's secure submission channel. Do not send medical records through public comments or social media.",
+            ]),
+            ("What happens after you submit your information?", [
+                "First, AetherMed checks whether the information is clear enough for an initial review. If essential details are missing, a coordinator may ask focused follow-up questions.",
+                "Next, the team considers practical factors such as the relevant specialty, potential hospital route, international-patient access, language support, timing, and travel needs. Where the case appears suitable to explore further, AetherMed can outline possible next steps.",
+                "These next steps may include preparing a formal medical-record review, requesting a remote specialist consultation where available, or asking a hospital to assess the case.",
+            ]),
+            ("What will you receive?", [
+                "The response may identify information still needed before a hospital review, one or more potential hospital, department, or specialist pathways to investigate, whether a remote review may be worth requesting before travel, and an indicative sequence of next steps.",
+                "The level of detail depends on the records supplied and the complexity of the case. An initial medical assessment in China cannot confirm eligibility, treatment, cost, timing, or outcome. Those decisions remain with the receiving hospital and licensed doctors.",
+            ]),
+            ("How should you use the result?", [
+                "Treat the assessment as a planning tool. Compare the suggested pathway with advice from your current doctor, ask what additional tests may be needed, and consider travel risk, continuity of care, insurance, and follow-up at home.",
+                "The assessment is not a diagnosis, a medical second opinion, or a promise that a hospital will accept your case. It is a practical first step for understanding whether China may be worth exploring and what information should be prepared next.",
+            ]),
+        ],
+        "cta": "Share a brief description of your condition, your goals, and the medical records you already have. AetherMed will review the information for coordination purposes and explain the practical next step, where appropriate.",
+    },
 ]
 
 
 TAG_GROUPS = {
     "Specialty": [],
     "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review"],
-    "Patient Journey": ["Before You Travel", "Medical Records", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
+    "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China"],
     "Audience & Format": ["International Patients", "Complete Guide"],
 }
