@@ -266,6 +266,10 @@ def article_url(article: dict) -> str:
     return f"/insights/{article['primary_category']}/{article['slug']}/"
 
 
+def sorted_articles(articles: list[dict]) -> list[dict]:
+    return sorted(articles, key=lambda a: (a["updated"], a["published"], a["title"]), reverse=True)
+
+
 def absolute(path: str) -> str:
     return f"{SITE}{path}"
 
@@ -421,7 +425,7 @@ def collection_schema(path: str, name: str, description: str) -> list[dict]:
 
 
 def render_home() -> None:
-    featured = [a for a in ARTICLES if a.get("featured")]
+    featured = sorted_articles([a for a in ARTICLES if a.get("featured")])
     category_cards = "\n".join(
         f'<a class="insight-category-card" href="./{slug}/"><strong>{esc(cat["name"])}</strong><span>{esc(cat["description"].split(".")[0])}.</span></a>'
         for slug, cat in CATEGORIES.items()
@@ -435,7 +439,7 @@ def render_home() -> None:
             "tags": a["tags"],
             "url": article_url(a),
         }
-        for a in ARTICLES
+        for a in sorted_articles(ARTICLES)
     ], ensure_ascii=False)
     body = f"""
     <main class="insights-page">
@@ -499,7 +503,7 @@ def render_home() -> None:
 
 
 def render_category(slug: str, cat: dict) -> None:
-    articles = [a for a in ARTICLES if slug in a["categories"]]
+    articles = sorted_articles([a for a in ARTICLES if slug in a["categories"]])
     cards = "".join(card(a, 2) for a in articles) if articles else '<div class="insights-empty"><h2>Articles are coming soon</h2><p>This category is ready for future AetherMed content. Browse the latest Insights or request a free assessment if you need help now.</p><a class="button" href="../../index.html#contact">Get a Free Assessment</a></div>'
     related_tags = sorted({tag for a in articles for tag in a["tags"]}) or ["International Patients"]
     body = f"""
@@ -597,7 +601,7 @@ def render_tags() -> None:
             counts[tag] = counts.get(tag, 0) + 1
     for tag, count in counts.items():
         slug = slugify(tag)
-        articles = [a for a in ARTICLES if tag in a["tags"]]
+        articles = sorted_articles([a for a in ARTICLES if tag in a["tags"]])
         robots = "index, follow" if count >= 3 else "noindex, follow"
         body = f"""
     <main class="insights-page">
@@ -623,7 +627,7 @@ def render_tags() -> None:
 def render_search() -> None:
     data_json = json.dumps([
         {"title": a["title"], "summary": a["description"], "categories": [CATEGORIES[c]["name"] for c in a["categories"]], "tags": a["tags"], "url": article_url(a), "image": a["image"], "alt": a["image_alt"], "updated": a["updated"]}
-        for a in ARTICLES
+        for a in sorted_articles(ARTICLES)
     ], ensure_ascii=False)
     body = """
     <main class="insights-page">
