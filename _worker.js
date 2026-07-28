@@ -148,7 +148,7 @@ async function handleContactPost(request, env) {
     privacyConsent: formData.get("privacy_consent") === "on"
   };
 
-  if (!fields.firstName || !fields.lastName || !fields.email || !fields.whatsapp || !fields.country || !fields.specialty || !fields.message || !fields.privacyConsent) {
+  if (!fields.firstName || !fields.lastName || !fields.email || !fields.country || !fields.specialty || !fields.message || !fields.privacyConsent) {
     return jsonResponse({ error: "Missing required form fields." }, 400);
   }
 
