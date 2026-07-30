@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-07-28"
+TODAY = "2026-07-30"
 
 
 CATEGORIES = {
@@ -242,15 +242,55 @@ ARTICLES = [
         ],
         "cta": "Share a brief description of your condition, your goals, and the medical records you already have. AetherMed will review the information for coordination purposes and explain the practical next step, where appropriate.",
     },
+    {
+        "slug": "ruijin-hospital-multidisciplinary-consultations",
+        "title": "How a Multidisciplinary Team at Ruijin Hospital Helped Uncover a Hidden Condition",
+        "description": "See how an MDT at Ruijin Hospital helped identify a hidden condition in Ms. X, and learn what international patients should know before a review.",
+        "lede": "A multidisciplinary team, or MDT, brings doctors from relevant specialties together to review one case. This can be useful when symptoms are unclear, test results involve more than one organ system, or several treatment routes need to be considered.",
+        "primary_category": "hospitals-doctors",
+        "categories": ["hospitals-doctors", "success-stories"],
+        "tags": ["Ruijin Hospital", "MDT Review", "International Patient Departments", "Patient Story", "Shanghai"],
+        "image": "ruijin-hospital-mdt-international-patients.webp",
+        "image_alt": "International patient attending a multidisciplinary consultation with doctors in Shanghai.",
+        "published": "2026-07-30",
+        "updated": "2026-07-30",
+        "featured": True,
+        "sections": [
+            ("Ms. X's case: a warning sign found during testing", [
+                "A case published by Ruijin Hospital's International Medical Department describes a patient referred to as Ms. X. She was 63 and living with type 2 diabetes. She sought medical help after losing weight, but had no other obvious discomfort when she was admitted.",
+                "A routine urine test found an increased white blood cell count. A non-contrast abdominal CT then showed swelling and inflammatory changes around the left kidney.",
+                "The International Medical Department organized a review involving radiology, interventional medicine, infectious diseases, nephrology, urology, and endocrinology. According to the hospital's account, the team diagnosed type 2 diabetes complicated by previously hidden multiple abscesses in both kidneys and developed an individual treatment plan.",
+                "The original article describes Ms. X as recovering after the MDT-led care plan. It does not provide enough clinical detail to assess the treatment itself, the length of recovery, or which parts of the plan were decisive. Her experience should therefore be read as an example of coordinated case review, not evidence that another patient will receive the same diagnosis, treatment, or result.",
+            ]),
+            ("Why an MDT mattered in this case", [
+                "Ms. X did not arrive with a clear set of symptoms pointing to kidney abscesses. The concern emerged through urine testing and CT imaging. Diabetes also affected the clinical context.",
+                "Bringing the relevant specialties together allowed the findings to be considered from diagnostic, infection, kidney, urological, endocrine, imaging, and possible interventional perspectives.",
+                "The team needed for any individual patient will depend on the condition and the hospital's assessment. Some cases need a single specialist first; others may benefit from coordinated discussion across several departments.",
+            ]),
+            ("When might an international patient ask about an MDT?", [
+                "An MDT review may be worth exploring when the diagnosis remains uncertain after previous consultations, several specialties are likely to influence the treatment decision, test results need to be reviewed together rather than one at a time, or a complex or recurrent condition requires a coordinated second opinion.",
+                "Not every case needs an MDT. The hospital may recommend one specialist, further tests, or an in-person examination first. Availability, participating departments, fees, timing, and the form of any written opinion should be confirmed before travel.",
+            ]),
+            ("Preparing records for review", [
+                "International patients should provide a concise medical summary, recent clinic or discharge notes, laboratory results, imaging reports, and original imaging files when requested.",
+                "A clear question helps the hospital decide which specialties may need to participate. For example, the patient may ask whether a diagnosis is complete, whether different departments should review the case together, or whether a proposed treatment plan needs another specialist perspective.",
+            ]),
+            ("Source note", [
+                "This article is adapted and translated from a Chinese-language article originally published by Shanghai Jiao Tong University School of Medicine Affiliated Ruijin Hospital on the official WeChat account of Ruijin Hospital International Medical Department. The English version has been edited for international readers.",
+                "Details of Ruijin Hospital's International Medical Department and MDT services should be reconfirmed with the hospital before publication and before any patient makes arrangements. Individual experiences and outcomes vary.",
+            ]),
+        ],
+        "cta": "If you are considering a multidisciplinary consultation in China, share your diagnosis, recent records, and the specific decision you want reviewed. AetherMed can help clarify the practical route and information requirements.",
+    },
 ]
 
 
 TAG_GROUPS = {
     "Specialty": [],
-    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review"],
+    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
-    "Location": ["China"],
-    "Audience & Format": ["International Patients", "Complete Guide"],
+    "Location": ["China", "Shanghai"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Patient Story", "Ruijin Hospital"],
 }
 
 
