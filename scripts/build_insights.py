@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-07-30"
+TODAY = "2026-08-04"
 
 
 CATEGORIES = {
@@ -282,6 +282,49 @@ ARTICLES = [
         ],
         "cta": "If you are considering a multidisciplinary consultation in China, share your diagnosis, recent records, and the specific decision you want reviewed. AetherMed can help clarify the practical route and information requirements.",
     },
+    {
+        "slug": "how-foreigners-access-hospitals-china",
+        "title": "How Foreigners Can Access Hospitals in China",
+        "description": "Learn how foreigners can access hospitals in China, compare public and international patient routes, prepare records, and plan appointments or admission.",
+        "lede": "Foreign patients can use medical services in China, but the best route depends on the hospital, specialty, language needs, urgency, and whether the visit is for an outpatient opinion, testing, or planned treatment. Starting with the right department can prevent avoidable delays.",
+        "primary_category": "medical-in-china",
+        "categories": ["medical-in-china", "hospitals-doctors"],
+        "tags": ["International Patients", "Public Hospitals", "International Patient Departments", "Hospital Admission", "China"],
+        "image": "how-foreigners-access-hospitals-china.webp",
+        "image_alt": "International patient speaking with a coordinator at a hospital in China.",
+        "published": "2026-08-04",
+        "updated": "2026-08-04",
+        "featured": True,
+        "sections": [
+            ("Choose the right hospital access route", [
+                "Large public hospitals often provide broad specialist resources. Some have an international medical department or a designated international patient service, while others use the standard outpatient system.",
+                "Private and international hospitals may offer easier English-language access, but their specialty coverage and fees vary. The best route depends on the condition, specialty, language needs, timing, and whether the patient needs an opinion, testing, admission, or planned treatment.",
+                "AetherMed can help international patients organize records, identify suitable hospital and specialist options, submit enquiries, coordinate appointment logistics, and connect the consultation with later testing or treatment planning. Hospital acceptance and clinical decisions remain with the receiving institution.",
+            ]),
+            ("1. Define what you need", [
+                "Be specific about the purpose of the hospital visit: a second opinion, a specialist assessment, diagnostic testing, surgery planning, ongoing treatment, or admission for a defined procedure.",
+                "The diagnosis alone may not identify the correct hospital. The relevant subspecialty, procedure, current clinical question, and urgency often matter more than the general hospital name.",
+            ]),
+            ("2. Prepare a concise medical file", [
+                "Include a short case summary, diagnoses, recent reports, imaging, pathology, medication list, allergies, previous treatment, and your main questions.",
+                "Clear records help a hospital decide which department should review the case and whether additional information is needed before an appointment can be confirmed.",
+            ]),
+            ("3. Confirm the department and appointment route", [
+                "Ask whether the hospital accepts direct international enquiries, requires a coordinator or referral, and can review records before booking.",
+                "Confirm the doctor or department, visit type, expected language support, deposit or payment requirements, and what original documents to bring. City guidance may help identify hospitals with international services, but current arrangements should always be confirmed directly with the hospital.",
+            ]),
+            ("4. Plan for travel, testing, and admission", [
+                "An outpatient consultation does not automatically mean admission or treatment. Additional tests may be requested, and a treatment plan may change after an in-person examination.",
+                "Keep travel plans flexible until the hospital confirms the next step. Patients should also think through interpretation, payment, accommodation, caregiver support, discharge documents, and follow-up with their home doctor.",
+            ]),
+            ("Questions to clarify before travelling", [
+                "Has the hospital reviewed enough information to select the correct department? Is the appointment confirmed, and what identification or registration documents are required?",
+                "Will interpretation be available for the consultation and consent process? What deposits, estimated fees, and payment methods apply?",
+                "If treatment is recommended, how will admission, follow-up, and travel changes be handled?",
+            ]),
+        ],
+        "cta": "Share your diagnosis, goals, and available medical records. We will review the coordination needs and outline possible next steps in China.",
+    },
 ]
 
 
@@ -290,7 +333,7 @@ TAG_GROUPS = {
     "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Patient Story", "Ruijin Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Patient Story", "Ruijin Hospital"],
 }
 
 
