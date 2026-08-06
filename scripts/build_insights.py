@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-08-04"
+TODAY = "2026-08-06"
 
 
 CATEGORIES = {
@@ -325,12 +325,53 @@ ARTICLES = [
         ],
         "cta": "Share your diagnosis, goals, and available medical records. We will review the coordination needs and outline possible next steps in China.",
     },
+    {
+        "slug": "what-is-car-t-therapy",
+        "title": "What Is CAR-T Therapy and How Does It Work?",
+        "description": "Understand how CAR-T therapy works, who may be considered, the treatment process, important risks, and questions international patients should ask.",
+        "lede": "CAR-T therapy is a form of immunotherapy that modifies a patient's own T cells so they can recognize a specific target on cancer cells. It has become an option for some people with certain blood cancers, usually after specialist assessment and often after other treatments. It is not suitable for every cancer or every patient.",
+        "primary_category": "specialty-treatment",
+        "categories": ["specialty-treatment", "medical-in-china"],
+        "tags": ["CAR-T Therapy", "Oncology", "Haematology", "Treatment Planning", "International Patients"],
+        "image": "what-is-car-t-therapy.webp",
+        "image_alt": "Patient discussing CAR-T therapy with a haematology-oncology specialist.",
+        "published": "2026-08-06",
+        "updated": "2026-08-06",
+        "featured": True,
+        "sections": [
+            ("How CAR-T therapy works", [
+                "CAR-T therapy is a personalized cell therapy. T cells are collected from the patient's blood, changed in a laboratory so they can produce a chimeric antigen receptor, expanded, tested, and then returned to the patient by infusion.",
+                "Many patients receive short-course lymphodepleting chemotherapy before infusion. This preparation is intended to create space for the CAR-T cells. After infusion, close monitoring is needed for early side effects and a longer follow-up plan.",
+                "The US National Cancer Institute describes CAR-T as a complex process in which T cells are collected, engineered, expanded, and returned to the patient. The details can vary by product, trial protocol, hospital, and diagnosis.",
+            ]),
+            ("Who might be considered?", [
+                "Eligibility depends on the exact diagnosis and cancer-cell target, previous treatments, disease status, infections, organ function, overall health, and the approved or research options available at the treating center.",
+                "CAR-T is established for selected blood cancers. Use in most solid tumors remains investigational, and patients should ask whether a proposed pathway is an approved treatment, a clinical trial, or another form of specialist assessment.",
+            ]),
+            ("Why do some international patients explore CAR-T in China?", [
+                "China has one of the world's largest CAR-T research landscapes. Trials are conducted across multiple hospitals and investigate different targets, specialties, and diseases, including blood cancers and selected solid tumors.",
+                "A large trial portfolio does not mean that every study is recruiting, accepts international patients, or is appropriate for an individual case. Hospital review, trial criteria, documentation, timing, and language support all matter.",
+                "Cost can also be a reason to compare China with other countries. AetherMed's preliminary market estimates suggest that, in selected and genuinely comparable pathways, quoted costs in China may be around half a US or European pathway. These ratios are not standard prices or guaranteed savings. Patients should compare written, itemized estimates from the treating hospitals rather than headline figures.",
+            ]),
+            ("What are the main risks?", [
+                "CAR-T can cause serious and sometimes life-threatening complications. Cytokine release syndrome may bring fever, low blood pressure, breathing difficulty, or organ problems.",
+                "Neurological toxicity may cause confusion, language problems, tremor, seizures, or reduced consciousness. Infection, prolonged low blood counts, and other immune effects are also possible.",
+                "Regulators also require ongoing monitoring for secondary T-cell malignancies after treatment. These risks make experienced multidisciplinary care and rapid access to emergency support essential.",
+            ]),
+            ("What should an international patient prepare?", [
+                "Prepare a confirmed pathology diagnosis, the most recent disease assessment, treatment history, response to prior therapy, complications, and current medications.",
+                "Useful records may include laboratory results, imaging, pathology or molecular reports, and information about whether relevant tissue samples are available.",
+                "Patients should ask about eligibility, product or trial status, manufacturing time, total expected stay, caregiver needs, monitoring, emergency plans, payment, and follow-up after returning home.",
+            ]),
+        ],
+        "cta": "If you are exploring CAR-T or another specialist cancer treatment in China, submit your diagnosis and treatment history for an initial coordination review.",
+    },
 ]
 
 
 TAG_GROUPS = {
-    "Specialty": [],
-    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review"],
+    "Specialty": ["Oncology", "Haematology"],
+    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "CAR-T Therapy"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
     "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Patient Story", "Ruijin Hospital"],
