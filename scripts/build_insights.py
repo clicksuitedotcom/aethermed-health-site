@@ -46,6 +46,52 @@ CATEGORIES = {
 
 ARTICLES = [
     {
+        "slug": "how-aethermed-matches-patients-hospitals-specialists-china",
+        "title": "How AetherMed Matches International Patients with Hospitals and Specialists in China",
+        "description": "Learn how AetherMed reviews medical records and patient priorities to match international patients with suitable hospitals and specialists in China.",
+        "lede": "The diagnosis is only the starting point. The right match also depends on the clinical question, hospital route, timing, language needs, and whether the team is currently accepting suitable cases.",
+        "primary_category": "medical-journey-guides",
+        "categories": ["medical-journey-guides", "hospitals-doctors"],
+        "tags": ["Hospital Matching", "Doctor Matching", "Medical Records", "Case Management", "International Patients"],
+        "image": "01-aethermed-hospital-specialist-matching.webp",
+        "image_alt": "International patient reviewing hospital and specialist options with a medical coordinator.",
+        "published": "2026-08-11",
+        "updated": "2026-08-11",
+        "featured": True,
+        "sections": [
+            ("Why the most famous hospital is not always the right match", [
+                "China has large public hospitals, international medical departments, private providers, specialist centres, and research teams. A famous hospital is not automatically the best fit for every patient. AetherMed's matching process starts with the case itself, then narrows the options to hospitals and specialists whose current scope appears relevant.",
+            ]),
+            ("Matching starts with a clear clinical question", [
+                "A diagnosis such as cancer, a neurological disorder, or a complex surgical condition can involve several subspecialties. The useful question is often more specific: Is the patient seeking confirmation of a diagnosis? A surgical opinion? A comparison of treatment paths? Access to a particular technology? Or a review after prior treatment has not worked as expected?",
+            ]),
+            ("What AetherMed reviews", [
+                "The confirmed or suspected diagnosis and the main question the patient wants answered.",
+                "Recent imaging, pathology, laboratory results, treatment history, current medicines, and relevant complications.",
+                "The patient's age, overall condition, urgency, travel readiness, language needs, and preferred city.",
+                "Whether the request is for a second opinion, outpatient assessment, planned procedure, longer treatment, or trial enquiry.",
+                "Any practical limits, including timing, budget range, caregiver needs, and follow-up after returning home.",
+            ], "Well-organised records make this review more useful. See Preparing Medical Records for Treatment in China."),
+            ("How the shortlist is built", [
+                "The team compares the case with known hospital departments, specialist interests, international patient routes, and the information required for an initial review. This may produce one clear route or a short list. When two options look reasonable, the comparison should focus on clinical fit and current availability, not a generic ranking.",
+                "Foreign patients can use different hospital routes in China. Our guide to accessing hospitals in China explains the main differences. Beijing's official medical guide also shows why international service arrangements must be checked hospital by hospital.",
+            ]),
+            ("What AetherMed can help with", [
+                "AetherMed can organise the case summary, identify possible hospital and specialist routes, submit records for preliminary review, clarify missing information, and coordinate appointment logistics. If the first route is not available, the team can discuss reasonable alternatives. AetherMed does not rank doctors as 'best', make clinical decisions, or guarantee that a hospital will accept a case.",
+            ]),
+            ("What the patient receives", [
+                "The initial output may include a request for additional records, a suggested department or hospital route, questions for the receiving team, and the next coordination step. It is not a diagnosis or final treatment plan. The hospital may request more tests or an in-person examination before confirming whether treatment is suitable.",
+            ]),
+            ("Where matching fits in the six-step journey", [
+                "Hospital and specialist matching is the second stage of AetherMed's six-step journey: initial enquiry and Free Assessment; medical review and hospital matching; appointment and travel planning; arrival and the first hospital visit; treatment and payment coordination; and discharge and follow-up.",
+                "Read the full international patient journey in China before making travel arrangements.",
+            ]),
+        ],
+        "cta": "Send a concise case summary and the most recent medical records. AetherMed will review the coordination needs and outline possible hospital or specialist routes in China.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy.",
+    },
+    {
         "slug": "how-to-get-a-second-medical-opinion-in-china",
         "title": "How to Get a Second Medical Opinion in China",
         "description": "Learn how international patients can request a second medical opinion in China, what information supports review, and how AetherMed coordinates next steps.",
@@ -665,10 +711,15 @@ def render_article(article: dict) -> None:
     cat = CATEGORIES[article["primary_category"]]
     depth = 3
     root = rel_to_root(depth)
-    section_html = "\n".join(
-        f"<h2>{esc(title)}</h2>\n" + "\n".join(f"<p>{esc(p)}</p>" for p in paragraphs)
-        for title, paragraphs in article["sections"]
-    )
+    section_parts = []
+    for section in article["sections"]:
+        title, paragraphs, *after = section
+        if after:
+            content = "<ul>\n" + "\n".join(f"<li>{esc(p)}</li>" for p in paragraphs) + "\n</ul>\n<p>" + esc(after[0]) + "</p>"
+        else:
+            content = "\n".join(f"<p>{esc(p)}</p>" for p in paragraphs)
+        section_parts.append(f"<h2>{esc(title)}</h2>\n{content}")
+    section_html = "\n".join(section_parts)
     tag_html = "".join(tag_link(tag, depth) for tag in article["tags"])
     category_html = " ".join(category_link(c, depth) for c in article["categories"])
     url = article_url(article)
@@ -688,6 +739,14 @@ def render_article(article: dict) -> None:
         },
         breadcrumbs([("Home", "/"), ("Insights", "/insights/"), (cat["name"], f"/insights/{article['primary_category']}/"), (article["title"], url)]),
     ]
+    standard_help = "<!-- Article-specific service section appears above. -->" if article.get("include_standard_help") is False else """<h2>What AetherMed can help with</h2>
+        <p>AetherMed coordinates practical access to medical care in China. Depending on the case, support may include initial information review, medical-record organization and translation, hospital and doctor matching, remote consultation coordination, appointment and travel support, in-China case management and interpretation, and discharge and follow-up documentation. All diagnoses, eligibility decisions and treatment plans are made by the receiving hospital and its licensed medical professionals.</p>"""
+    if article.get("disclaimer"):
+        disclaimer = esc(article["disclaimer"])
+        disclaimer = disclaimer.replace("Terms &amp; Conditions", f'<a href="{root}terms.html">Terms &amp; Conditions</a>')
+        disclaimer = disclaimer.replace("Privacy Policy", f'<a href="{root}privacy.html">Privacy Policy</a>')
+    else:
+        disclaimer = f'This article is provided for general educational and informational purposes only. It does not constitute medical advice, diagnosis, treatment, a medical recommendation, legal advice, insurance advice, or a guarantee that any hospital, doctor, procedure, appointment, visa, treatment outcome, timeline, or cost will be available or suitable for a particular patient. AetherMed provides international medical coordination and related support services; it does not independently diagnose medical conditions, prescribe treatment, or replace consultation with a licensed physician. Remote consultations and preliminary assessments have limitations and cannot replace an in-person clinical examination or emergency medical care. If you are experiencing a medical emergency, contact your local emergency services immediately. Use of AetherMed’s website and services is subject to our <a href="{root}terms.html">Terms & Conditions</a> and <a href="{root}privacy.html">Privacy Policy</a>.'
     body = f"""
     <main class="article-page">
       <nav class="insight-breadcrumb" aria-label="Breadcrumb"><a href="../../../">Home</a><span>›</span><a href="../../">Insights</a><span>›</span><a href="../">{esc(cat['name'])}</a><span>›</span><span>{esc(article['title'])}</span></nav>
@@ -699,10 +758,9 @@ def render_article(article: dict) -> None:
         <p class="article-date"><time datetime="{article['published']}">Published {article['published']}</time> · <time datetime="{article['updated']}">Updated {article['updated']}</time></p>
         <img class="article-hero-image" src="{root}assets/{esc(article['image'])}" alt="{esc(article['image_alt'])}" width="1600" height="900" />
         {section_html}
-        <h2>What AetherMed can help with</h2>
-        <p>AetherMed coordinates practical access to medical care in China. Depending on the case, support may include initial information review, medical-record organization and translation, hospital and doctor matching, remote consultation coordination, appointment and travel support, in-China case management and interpretation, and discharge and follow-up documentation. All diagnoses, eligibility decisions and treatment plans are made by the receiving hospital and its licensed medical professionals.</p>
+        {standard_help}
         <div class="article-cta"><h2>Request a Free Assessment</h2><p>{esc(article['cta'])}</p><a class="button" href="{root}index.html#contact">Request a Free Assessment</a></div>
-        <div class="medical-disclaimer"><strong>Medical and Service Disclaimer</strong><p>This article is provided for general educational and informational purposes only. It does not constitute medical advice, diagnosis, treatment, a medical recommendation, legal advice, insurance advice, or a guarantee that any hospital, doctor, procedure, appointment, visa, treatment outcome, timeline, or cost will be available or suitable for a particular patient. AetherMed provides international medical coordination and related support services; it does not independently diagnose medical conditions, prescribe treatment, or replace consultation with a licensed physician. Remote consultations and preliminary assessments have limitations and cannot replace an in-person clinical examination or emergency medical care. If you are experiencing a medical emergency, contact your local emergency services immediately. Use of AetherMed’s website and services is subject to our <a href="{root}terms.html">Terms & Conditions</a> and <a href="{root}privacy.html">Privacy Policy</a>.</p></div>
+        <div class="medical-disclaimer"><strong>Medical and Service Disclaimer</strong><p>{disclaimer}</p></div>
       </article>
     </main>
 """
@@ -851,7 +909,8 @@ def render_sitemap() -> None:
     urls.append(("/insights/tags/international-patients/", "0.4", "monthly"))
     body = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for path, priority, freq in urls:
-        body.append(f"  <url>\n    <loc>{absolute(path)}</loc>\n    <lastmod>{TODAY}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>")
+        lastmod = "2026-08-11" if path == "/insights/medical-journey-guides/how-aethermed-matches-patients-hospitals-specialists-china/" else TODAY
+        body.append(f"  <url>\n    <loc>{absolute(path)}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>")
     body.append("</urlset>\n")
     write(ROOT / "sitemap.xml", "\n".join(body))
 
