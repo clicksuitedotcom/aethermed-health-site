@@ -46,6 +46,65 @@ CATEGORIES = {
 
 ARTICLES = [
     {
+        "slug": "professor-jianfeng-zhou-car-t-legacy-china",
+        "title": "Professor Jianfeng Zhou's CAR-T Legacy and the Search for More Accessible Treatment in China",
+        "description": "Explore Professor Jianfeng Zhou's CAR-T legacy at Wuhan Tongji Hospital through three hospital-reported patient cases, with context on access, risks, and limitations.",
+        "lede": "His work at Wuhan Tongji Hospital helped connect laboratory research, clinical care, and the practical question of how more patients might reach cellular therapy.",
+        "primary_category": "hospitals-doctors",
+        "categories": ["hospitals-doctors", "specialty-treatment", "success-stories"],
+        "tags": ["Professor Jianfeng Zhou", "Tongji Hospital Wuhan", "CAR-T Therapy", "Haematology", "Clinical Research", "International Patient Stories", "Hospital-Reported Cases"],
+        "image": "02-professor-jianfeng-zhou-car-t-legacy.webp",
+        "image_alt": "A multidisciplinary cellular-therapy team reviewing CAR-T laboratory data.",
+        "published": "2026-08-13",
+        "updated": "2026-08-13",
+        "featured": True,
+        "sections": [
+            ("Professor Jianfeng Zhou and Wuhan Tongji Hospital", [
+                "Professor Jianfeng Zhou (1966-2022) was a haematologist at Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology in Wuhan. He served as director of the hospital's Department of Haematology and led work in blood cancers and cellular immunotherapy. This article is retrospective: Professor Zhou died in March 2022 and cannot be contacted or booked for consultation.",
+            ]),
+            ("From laboratory work to clinical questions", [
+                "CAR-T therapy modifies immune cells so they can recognise a target on cancer cells. Professor Zhou's team worked with researchers and clinicians to develop and study CAR-T approaches for relapsed or refractory blood cancers. The programme included regular discussion between laboratory scientists and clinical teams, allowing observations from treated patients to inform later research questions.",
+                "A report from the Hubei Provincial Health Commission described this clinical-research collaboration. Peer-reviewed work involving Professor Zhou also examined CD19/CD22 CAR-T combination therapy for selected patients with relapsed or refractory double-hit lymphoma.",
+            ]),
+            ("What 'more accessible' meant in this work", [
+                "Accessibility is not only the price of the cell product. It also involves manufacturing, hospital capability, patient selection, management of serious side effects, and the time needed to move from assessment to infusion. Professor Zhou's work drew attention to domestic development and hospital-based research as possible ways to expand treatment options.",
+                "In a historical hospital report, Tongji Hospital described its first use of a marketed domestic CAR-T product and quoted RMB 1.2 million for that product at the time. The report said this was around 40% of the price abroad. Those figures are historical, case-specific, and not a current quotation.",
+            ]),
+            ("Three hospital-reported cases from the team's work", [
+                "The following accounts were published by Tongji Hospital at different points in the team's CAR-T work. They show the range of cases reviewed by the programme, but they are not clinical-trial summaries and cannot predict how another patient will respond.",
+            ]),
+            ("Maggie: acute lymphoblastic leukaemia after transplant failure", [
+                "Tongji Hospital reported that Maggie, a 21-year-old patient living in Dubai, travelled to Wuhan after chemotherapy and a previous stem-cell transplant had failed. She received two stages of CAR-T treatment in 2016 and required intensive monitoring during a serious inflammatory reaction. The hospital's 2019 follow-up said that testing continued to show no detectable leukaemia cells more than three years later. This was a historical individual outcome, not a guarantee of long-term remission for other patients.",
+            ]),
+            ("Mr Chen: an international multiple myeloma case", [
+                "A 2018 hospital report described a 58-year-old patient from Switzerland whose multiple myeloma had progressed after a stem-cell transplant, chemotherapy, and several targeted treatments. After CAR-T treatment in Wuhan, the hospital reported at roughly two months that visible masses had resolved and disease measurements were below the test's detection limit. The report did not establish how a different patient, product, or later treatment setting would perform.",
+            ]),
+            ("'Daxiong': double-hit diffuse large B-cell lymphoma", [
+                "In 2021, Tongji Hospital reported on a 31-year-old patient with relapsed or refractory double-hit diffuse large B-cell lymphoma who had developed infection and viral myocarditis during chemotherapy. He later received a newly marketed domestic CAR-T product. At the follow-up described in the hospital report, PET-CT showed complete remission, and the hospital said that cytokine release syndrome and neurological toxicity had not been observed in his treatment course. That experience should not be read as evidence that these complications are uncommon.",
+            ]),
+            ("Research does not equal routine availability", [
+                "A published study or hospital-reported case does not show that the same treatment is open to every patient. Current access depends on the exact cancer type and target, previous treatment, organ function, infection status, approved indications, trial criteria, hospital capacity, and whether international patients can be enrolled. The treating team must also explain cytokine release syndrome, neurological toxicity, infections, prolonged low blood counts, and other risks.",
+                "Later publications continue to acknowledge Professor Zhou's contribution to CAR-T research, including a long-term study of a fully human CAR-T therapy for multiple myeloma. This does not establish individual eligibility or present-day availability.",
+            ]),
+            ("What international patients should verify", [
+                "Which current hospital team will review the case and who is responsible for treatment.",
+                "Whether the option is an approved commercial treatment, an investigator-initiated study, or a registered clinical trial.",
+                "The exact diagnosis, target, inclusion and exclusion criteria, and required previous treatments.",
+                "An itemised estimate covering the cell product, testing, hospital stay, side-effect management, and follow-up.",
+                "How long the patient and caregiver must remain near the hospital and what emergency plan applies.",
+            ], "Current availability and requirements must be confirmed directly with the receiving hospital."),
+            ("What AetherMed can help with", [
+                "AetherMed can help organise records, identify current haematology or cellular-therapy teams in China, request a preliminary hospital review, and coordinate practical next steps. It cannot arrange a consultation with Professor Zhou, determine CAR-T eligibility, guarantee trial enrolment, or promise a price or treatment result.",
+            ]),
+            ("Source note", [
+                "This article was prompted by and adapted from the hospital feature \"群医闪耀 | 周剑峰：研制出国人用得起的 CAR-T\", published by the official WeChat account of Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology. The English version has been rewritten for international readers and checked against hospital, government, and peer-reviewed sources.",
+            ]),
+        ],
+        "cta": "If you are exploring CAR-T in China, submit the diagnosis, pathology, treatment history, and latest disease assessment for an initial coordination review.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. CAR-T products, clinical trials, indications, prices, and international-patient access change over time. Historical research and individual cases do not predict another patient's outcome. The patient accounts above are historical, hospital-reported cases. Individual experiences and outcomes vary, and no case represents or guarantees another patient's eligibility, treatment course, response, remission, safety, or survival.",
+    },
+    {
         "slug": "how-aethermed-matches-patients-hospitals-specialists-china",
         "title": "How AetherMed Matches International Patients with Hospitals and Specialists in China",
         "description": "Learn how AetherMed reviews medical records and patient priorities to match international patients with suitable hospitals and specialists in China.",
@@ -564,6 +623,7 @@ def card(article: dict, depth: int) -> str:
 
 def write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    content = "\n".join(line.rstrip() for line in content.splitlines()) + ("\n" if content.endswith("\n") else "")
     path.write_text(content, encoding="utf-8")
 
 
@@ -908,8 +968,9 @@ def render_sitemap() -> None:
     urls.extend((article_url(a), "0.7", "monthly") for a in ARTICLES)
     urls.append(("/insights/tags/international-patients/", "0.4", "monthly"))
     body = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    article_dates = {article_url(article): article["updated"] for article in ARTICLES}
     for path, priority, freq in urls:
-        lastmod = "2026-08-11" if path == "/insights/medical-journey-guides/how-aethermed-matches-patients-hospitals-specialists-china/" else TODAY
+        lastmod = article_dates.get(path, TODAY)
         body.append(f"  <url>\n    <loc>{absolute(path)}</loc>\n    <lastmod>{lastmod}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>")
     body.append("</urlset>\n")
     write(ROOT / "sitemap.xml", "\n".join(body))
