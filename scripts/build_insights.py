@@ -9,6 +9,17 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
 TODAY = "2026-08-06"
 
+GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-34YKBXVDEF');
+    </script>
+"""
+
 
 CATEGORIES = {
     "medical-in-china": {
@@ -560,7 +571,7 @@ def layout(title: str, description: str, canonical_path: str, body: str, depth: 
     return f"""<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+{GOOGLE_TAG}    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{esc(title)}</title>
     <meta name="description" content="{esc(description)}" />
