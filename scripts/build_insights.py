@@ -57,6 +57,58 @@ CATEGORIES = {
 
 ARTICLES = [
     {
+        "slug": "public-vs-private-hospitals-china-international-patients",
+        "title": "Public vs Private Hospitals in China: Which Route Fits an International Patient?",
+        "description": "Compare public, private, and international hospital routes in China, including specialist access, language support, costs, and coordination.",
+        "lede": "The best hospital route is not determined by ownership alone. For an international patient, the stronger choice is the one that matches the diagnosis, specialist, access pathway, communication needs, and practical budget.",
+        "primary_category": "medical-in-china",
+        "categories": ["medical-in-china", "hospitals-doctors"],
+        "tags": ["Public Hospitals", "Private Hospitals", "International Medical Departments", "Hospital Selection", "International Patients"],
+        "image": "01-public-vs-private-hospitals-china.webp",
+        "image_alt": "International patient comparing public and private hospital routes with a medical coordinator in China.",
+        "published": "2026-08-17",
+        "updated": "2026-08-17",
+        "featured": True,
+        "sections": [
+            ("There is more than one hospital route", [
+                "International patients often frame the decision as public hospital versus private hospital. In practice, there are three common routes: a standard department in a public hospital, an international or VIP department inside a public hospital, and a private or international hospital. The right route depends on the condition, specialist fit, urgency, language needs, budget, insurance, and the level of coordination required.",
+                "Beijing's official medical guide notes that both public and non-public institutions provide English-language services, while some public hospitals operate dedicated international medical departments. Availability still differs by hospital and department.",
+            ]),
+            ("Public hospitals: strongest when specialist depth matters", [
+                "China's large public tertiary hospitals are often the first place to explore for a complex diagnosis, advanced surgery, multidisciplinary review, rare disease, or access to a highly specialised team. Major academic hospitals may combine broad departments with research and referral experience. However, the hospital's overall reputation does not automatically identify the best doctor or confirm that an international patient will be accepted.",
+            ]),
+            ("Public hospitals at a glance", [
+                "Potential advantages: broad specialist coverage, multidisciplinary resources, high-volume clinical teams, and access to complex inpatient care.",
+                "Possible limitations: busier systems, less English support in standard departments, unfamiliar digital registration, limited appointment slots, and payment or deposit requirements.",
+            ], "Best for: patients whose priority is a particular department, specialist, procedure, or complex-care pathway rather than hotel-style service."),
+            ("Private hospitals: strongest when convenience and continuity lead", [
+                "Private hospitals and international clinics often provide bilingual booking, longer consultations, more familiar service processes, commercial-insurance support, and easier coordination between outpatient visits. This can be valuable for routine care, diagnostics, rehabilitation, maternity, paediatrics, or ongoing follow-up. The trade-off is that fees are usually higher, and a private facility may not have the same depth in every complex specialty.",
+            ]),
+            ("Private hospitals at a glance", [
+                "Potential advantages: multilingual communication, simpler scheduling, service continuity, clearer patient support, and sometimes broader commercial-insurance arrangements.",
+                "Possible limitations: higher fees, variable emergency capability, and the need to confirm whether the required specialist, intensive care, procedure, or technology is available on site.",
+            ], "Best for: patients prioritising accessibility, language support, coordinated routine care, or a more familiar international service environment."),
+            ("The middle route: an international department in a public hospital", [
+                "An international medical department can combine access to a major public hospital's specialists with more coordinated registration, language assistance, private rooms, or commercial-insurance processes. It may be a strong option for overseas patients, but it is not simply a faster doorway to every doctor or treatment. Services, fees, eligible departments, bed capacity, and appointment rules must be checked case by case.",
+                "Shanghai's official guide offers a practical public-versus-private overview and shows how hours, insurance, fees, and emergency arrangements can differ across facilities.",
+            ]),
+            ("A practical decision checklist", [
+                "Clinical fit: Which department and named team regularly manage this diagnosis?",
+                "Access: Is the patient eligible for the standard, VIP, international, or private route?",
+                "Timing: Is a remote record review possible before travel, and how soon could an appointment occur?",
+                "Communication: Are interpretation and English-language consent materials available?",
+                "Cost and insurance: What requires a deposit, what is estimated, and what may be reimbursed?",
+                "Continuity: Who will coordinate tests, admission, discharge records, and follow-up after returning home?",
+            ], "Use these questions to compare actual hospital pathways rather than relying on ownership or reputation alone."),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can review the medical question, diagnosis, records, timing, language needs, and budget before comparing possible public, international-department, and private routes. We can help organise and translate records, identify relevant hospitals and specialists, seek preliminary feedback where available, and coordinate appointments and treatment logistics after a hospital responds.",
+                "Read how AetherMed matches patients with hospitals and specialists. Final acceptance and medical decisions remain with the receiving hospital and clinicians.",
+            ]),
+        ],
+        "cta": "Share a concise case summary and recent records. We can outline suitable hospital routes and the information needed for an initial review.",
+        "include_standard_help": False,
+    },
+    {
         "slug": "professor-jianfeng-zhou-car-t-legacy-china",
         "title": "Professor Jianfeng Zhou's CAR-T Legacy and the Search for More Accessible Treatment in China",
         "description": "Explore Professor Jianfeng Zhou's CAR-T legacy at Wuhan Tongji Hospital through three hospital-reported patient cases, with context on access, risks, and limitations.",
@@ -490,7 +542,7 @@ TAG_GROUPS = {
     "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "CAR-T Therapy"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Patient Story", "Ruijin Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "Patient Story", "Ruijin Hospital"],
 }
 
 
