@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-08-06"
+TODAY = "2026-08-23"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,54 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "in-vivo-car-t-myeloma-wuhan-union-hospital",
+        "title": "In Vivo CAR-T for Myeloma: What a Wuhan Union Hospital Report Really Means",
+        "description": "Understand Wuhan Union Hospital's early in vivo CAR-T report for myeloma, the later Phase 1 context, limitations, risks, and patient questions.",
+        "lede": "A Wuhan Union Hospital report drew attention to an experimental way of generating CAR-T cells inside the body. The research is scientifically important, but the small early cohort and later trial status require careful interpretation.",
+        "primary_category": "specialty-treatment",
+        "categories": ["specialty-treatment", "hospitals-doctors", "news"],
+        "tags": ["Wuhan Union Hospital", "CAR-T Therapy", "Multiple Myeloma", "Clinical Research", "Haematology"],
+        "image": "02-in-vivo-car-t-myeloma-wuhan-union.webp",
+        "image_alt": "Cellular-therapy research team reviewing in vivo CAR-T laboratory data.",
+        "published": "2026-08-23",
+        "updated": "2026-08-23",
+        "featured": True,
+        "sections": [
+            ("What conventional CAR-T usually involves", [
+                "Most established CAR-T pathways begin by collecting a patient's T cells. A laboratory then engineers and expands those cells before they are returned by infusion. The process can take several weeks and usually includes lymphodepleting chemotherapy before infusion. The US National Cancer Institute describes this ex vivo manufacturing pathway and notes that serious complications can include cytokine release syndrome, neurological effects, and infection.",
+                "Read AetherMed's plain-language guide, What Is CAR-T Therapy and How Does It Work?",
+            ]),
+            ("What 'in vivo' CAR-T changes", [
+                "In vivo CAR-T aims to deliver genetic instructions directly inside the body so that some of the patient's own T cells become CAR-T cells without being removed and manufactured in a separate laboratory. If this approach eventually proves safe, effective, and reproducible, it could simplify production and shorten parts of the pathway. Those potential advantages remain research questions; they are not established benefits for routine patients.",
+            ]),
+            ("What Wuhan Union Hospital reported", [
+                "In July 2025, Wuhan Union Hospital reported early clinical work using an investigational anti-BCMA in vivo CAR-T approach for relapsed or refractory multiple myeloma. The related Lancet communication described research led by the hospital's Institute of Hematology with industry collaborators. The hospital article reported results in four patients and stated that the approach avoided leukapheresis and lymphodepleting chemotherapy.",
+                "The hospital reported an objective response in all four participants and stringent complete responses in two. It also stated that no grade 4 or higher toxicities were observed apart from haematologic toxicity. These figures came from a very small, early cohort reported by the institution. They cannot establish comparative effectiveness, long-term durability, or safety for a wider patient population.",
+                "The early communication is indexed in PubMed, and the hospital's own research news report identifies trial NCT06691685.",
+            ]),
+            ("What the later Phase 1 publication adds", [
+                "A later Phase 1 publication provides a more cautious context. It describes a single-arm, open-label study of five heavily pretreated male participants who received one dose of the investigational vector, with a median follow-up of six months. The primary objective was safety and tolerability; efficacy measures were preliminary. The publication states that the trial stopped early in 2025 and no further participants were enrolled.",
+                "That matters for international patients: a scientific publication can be important without creating a currently available treatment route. Trial status, regulatory oversight, hospital eligibility, manufacturing controls, monitoring capacity, and longer follow-up all need independent confirmation. In vivo CAR-T should not be treated as interchangeable with approved or hospital-established ex vivo CAR-T products.",
+                "See the later Phase 1 PubMed record and the ClinicalTrials.gov record for study-level information.",
+            ]),
+            ("Questions patients should ask", [
+                "Is the proposed therapy an approved product, hospital programme, investigator-initiated study, or registered clinical trial?",
+                "What is the target antigen, and does the patient's current disease meet the protocol criteria?",
+                "How many participants have been treated, for how long, and which adverse events were observed?",
+                "What monitoring, intensive-care support, infection prevention, and long-term follow-up are required?",
+                "Is enrolment currently open, and can international patients legally and practically be considered?",
+            ], "Current trial status and international-patient eligibility must be confirmed directly with the receiving hospital and study team."),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise pathology, treatment history, laboratory results, imaging, and current disease assessments for review by relevant haematology or cellular-therapy teams in China. We can clarify whether a hospital is considering an established treatment route, a research protocol, or neither, and coordinate consultations, interpretation, appointments, travel, and follow-up logistics where available. We cannot determine eligibility or promise access to an investigational therapy.",
+            ]),
+            ("Source and republication note", [
+                "Adapted into English from Wuhan Union Hospital's official report \"登上《柳叶刀》！协和成功完成全球首例体内CAR-T疗法治疗骨髓瘤\", published 4 July 2025, corresponding to WeChat source ID 2650868905_2. The hospital report reflects early institutional findings. This article also incorporates the later Phase 1 publication and does not present the research as routine clinical availability or as a prediction of outcome.",
+            ]),
+        ],
+        "cta": "If you are exploring CAR-T for multiple myeloma in China, submit your diagnosis, prior treatment history, latest response assessment, and recent laboratory results for an initial coordination review.",
+        "include_standard_help": False,
+    },
     {
         "slug": "public-vs-private-hospitals-china-international-patients",
         "title": "Public vs Private Hospitals in China: Which Route Fits an International Patient?",
@@ -538,11 +586,11 @@ ARTICLES = [
 
 
 TAG_GROUPS = {
-    "Specialty": ["Oncology", "Haematology"],
+    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma"],
     "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "CAR-T Therapy"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "Patient Story", "Ruijin Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "Clinical Research", "Patient Story", "Ruijin Hospital", "Wuhan Union Hospital"],
 }
 
 
