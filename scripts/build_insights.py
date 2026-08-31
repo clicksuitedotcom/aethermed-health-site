@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-08-23"
+TODAY = "2026-08-30"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,94 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "ruijin-hospital-car-t-lymphoma-cases",
+        "title": "What Two Hospital-Reported CAR-T Cases at Ruijin Hospital Show About Multidisciplinary Care",
+        "description": "Review two hospital-reported CAR-T cases at Ruijin Hospital and what they show about assessment, multidisciplinary care, risks, and follow-up.",
+        "lede": "Two anonymised lymphoma cases reported by Ruijin Hospital illustrate how assessment, treatment sequencing, toxicity planning, and follow-up fit around a CAR-T infusion.",
+        "primary_category": "success-stories",
+        "categories": ["success-stories", "hospitals-doctors", "specialty-treatment"],
+        "tags": ["Ruijin Hospital", "CAR-T Therapy", "Lymphoma", "Multidisciplinary Care", "Hospital-Reported Cases"],
+        "image": "02-ruijin-hospital-car-t-cases.webp",
+        "image_alt": "Multidisciplinary cellular-therapy team reviewing an anonymised CAR-T case.",
+        "published": "2026-08-30",
+        "updated": "2026-08-30",
+        "featured": True,
+        "sections": [
+            ("Why the care pathway matters as much as the infusion", [
+                "CAR-T is not a single appointment. It requires diagnosis confirmation, eligibility assessment, treatment sequencing, cell collection and manufacturing, conditioning therapy, infusion, monitoring for serious toxicities, and longer-term follow-up. The two cases reported by Ruijin Hospital show why multidisciplinary planning and clear response timepoints matter when discussing a hospital-reported success story.",
+                "For a plain-language introduction to the treatment itself, read What Is CAR-T Therapy and How Does It Work?",
+            ]),
+            ("Case 1: high-risk DLBCL with central nervous system involvement", [
+                "The hospital described Ms Z, aged 69, who was diagnosed in 2022 with diffuse large B-cell lymphoma (DLBCL) involving the central nervous system and bone marrow. The report also noted stage IV disease, a high International Prognostic Index score, and double expression. After the response to first-line treatment was considered inadequate, the team used a second-line regimen. The hospital reported complete remission after four cycles.",
+                "Because the team remained concerned about the risk of recurrence, the International Medical Department arranged remote domestic and international expert discussion through its 'Double I' consultation model. CAR-T was subsequently selected. The reported pathway included cell collection and processing, lymphodepleting conditioning, infusion, and inpatient monitoring by haematology, intensive care, neurology, nutrition, and transfusion specialists.",
+                "After infusion, Ms Z reportedly developed high fever, reduced oxygen saturation, cytokine release syndrome (CRS), and neurological symptoms including disorientation and tongue tremor. The hospital stated that these complications were treated according to its planned response pathway. She was discharged after nearly one month. The article reported complete remission at the one-month assessment and that she was doing well at nearly six months. These were time-limited observations, not proof of cure.",
+            ]),
+            ("Case 2: relapsed double-hit DLBCL", [
+                "The second patient, Ms C, was 70 and had been diagnosed with high-risk, double-hit DLBCL in 2021. According to the hospital, first-line treatment was complicated by bone-marrow suppression and a lung infection. After the infection was managed, she received a second-line regimen and was reported to be in complete remission after eight cycles in December 2021.",
+                "A new lesion was identified in late 2023 and biopsy confirmed relapse. The treating team considered her age and ability to tolerate further intensive chemotherapy before proceeding with CAR-T in January 2024. The report described mild CRS and neurological toxicity that resolved after treatment. At approximately day 100, the hospital reported a complete response on PET-CT and good quality of life. Again, this is one hospital-reported assessment at a defined follow-up point.",
+            ]),
+            ("What these cases illustrate", [
+                "Response to earlier treatment and current disease status influence when CAR-T is considered.",
+                "Older age alone does not determine eligibility; organ function, infection status, performance status, disease biology, and prior treatment also require review.",
+                "CRS and neurological toxicity can occur even when a reported outcome is favourable, so monitoring and rapid multidisciplinary response are central to the treatment pathway.",
+                "Complete remission at one month, day 100, or six months is not the same as a guaranteed long-term remission or cure.",
+            ], "The US National Cancer Institute also identifies CRS, neurological effects, infections, and other complications as important CAR-T risks. Product indications, protocols, and monitoring requirements vary by country and hospital."),
+            ("What AetherMed can help with", [
+                "For international patients exploring CAR-T in China, AetherMed can help organise pathology, imaging, treatment history, current disease assessments, and complication records for an initial hospital review. We can identify possible haematology or cellular-therapy routes, clarify additional tests requested by the hospital, and coordinate consultations, appointments, travel documents, interpretation, admission logistics, and follow-up materials where available.",
+                "Ruijin Hospital's official overview describes it as a Grade-A tertiary comprehensive teaching hospital. Current international-patient access, CAR-T products, eligibility, schedules, costs, and hospital acceptance must be confirmed for each case.",
+            ]),
+            ("Source and republication note", [
+                "Adapted into English from the Ruijin Hospital International Medical Department WeChat article 'Ruijin Hospital International Medical Department Successfully Performs CAR-T Cell Therapy', published 28 April 2024. Patient names remain anonymised. Details above reflect the hospital's report and should not be interpreted as independently verified outcomes or predictions for other patients.",
+            ]),
+        ],
+        "cta": "If you are exploring CAR-T in China, submit the pathology, treatment history, latest imaging, laboratory results, and current disease assessment for an initial coordination review.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. The patient accounts above are anonymised, historical, hospital-reported cases. Individual experiences and outcomes vary, and no case represents or guarantees another patient's eligibility, treatment course, response, remission, safety, or survival.",
+    },
+    {
+        "slug": "what-is-grade-a-tertiary-hospital-china",
+        "title": "What Is a Grade-A Tertiary Hospital in China?",
+        "description": "Understand what Grade-A tertiary hospital means in China, what the rating shows, and how international patients can choose the right hospital route.",
+        "lede": "For international patients, a hospital's 3A status can be useful context - but it is not a shortcut to choosing the right department, doctor, or access route.",
+        "primary_category": "medical-in-china",
+        "categories": ["medical-in-china"],
+        "tags": ["Public Hospitals", "Hospital Selection", "International Patients", "Specialist Care", "China Healthcare System"],
+        "image": "01-grade-a-tertiary-hospital-china.webp",
+        "image_alt": "International patient reviewing hospital options with a medical coordinator in a large Chinese hospital.",
+        "published": "2026-08-24",
+        "updated": "2026-08-24",
+        "featured": True,
+        "sections": [
+            ("What the term actually means", [
+                "China's hospital classification uses two related ideas. The level describes a hospital's role and service capacity within the health system. A tertiary hospital generally manages complex or serious conditions, provides specialist services, supports teaching or research, and receives referrals from other facilities. The grade reflects the result of an official hospital assessment. 'Grade A tertiary', often shortened to '3A' or written san jia in Chinese, therefore combines a tertiary level with a Grade A assessment.",
+                "The current national framework is set by China's National Health Commission's tertiary-hospital assessment standard. It looks beyond building size or reputation and includes requirements relating to lawful operation, medical quality and safety, service, management, performance, and continuous improvement.",
+            ]),
+            ("What a Grade-A tertiary rating can tell you", [
+                "The hospital has been assessed as a high-level institution within China's formal hospital system.",
+                "It is likely to have broad diagnostic, inpatient, surgical, critical-care, and specialist resources, although the exact mix varies.",
+                "It may be better equipped to coordinate several departments when a case is complex or involves multiple conditions.",
+                "It is usually an important referral centre for its city or region and may also support teaching and clinical research.",
+            ], "These are general characteristics. The exact departments, capabilities, and international-patient arrangements still need to be checked hospital by hospital."),
+            ("What the rating does not tell you", [
+                "A 3A label is not a universal ranking and does not prove that one hospital is the best choice for a particular diagnosis. Two Grade-A tertiary hospitals can have very different strengths. One may have a nationally recognised haematology service, while another is more relevant for liver surgery, neurology, rehabilitation, or a specific paediatric condition.",
+                "The rating also does not confirm that a named doctor is available, that an international patient will be accepted, that an international department treats the relevant condition, or that a particular procedure or clinical trial is currently open. Those questions require a case-specific review.",
+            ]),
+            ("What international patients should check", [
+                "Clinical fit: the department and specialist team should match the diagnosis and the question you want answered.",
+                "Access route: confirm whether the case should go through the regular public system, an international medical department, or another pathway.",
+                "Records: ask which imaging, pathology, laboratory results, treatment summaries, and translations are required before review.",
+                "Practical support: verify language assistance, appointment timing, payment arrangements, estimated length of stay, and follow-up planning.",
+                "Current availability: specialist schedules, beds, procedures, technologies, and research programmes can change.",
+            ], "For a broader explanation of access routes, read How Foreigners Can Access Hospitals in China."),
+            ("How AetherMed can help with hospital selection", [
+                "AetherMed can review the patient's diagnosis, treatment history, current medical question, language needs, timing, and budget range before identifying possible hospital and specialist routes. We can help organise and translate records, submit them for preliminary review where available, clarify missing information, and coordinate appointments and travel steps after a hospital responds.",
+                "Our approach is explained in How AetherMed Matches International Patients with Hospitals and Specialists in China. The final diagnosis, eligibility decision, and treatment plan always remain with the receiving hospital and licensed clinicians.",
+            ]),
+        ],
+        "cta": "Send a concise case summary and recent records. AetherMed can assess the coordination needs and outline possible hospital routes in China.",
+        "include_standard_help": False,
+    },
     {
         "slug": "in-vivo-car-t-myeloma-wuhan-union-hospital",
         "title": "In Vivo CAR-T for Myeloma: What a Wuhan Union Hospital Report Really Means",
@@ -586,11 +674,11 @@ ARTICLES = [
 
 
 TAG_GROUPS = {
-    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma"],
-    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "CAR-T Therapy"],
+    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Specialist Care"],
+    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "Clinical Research", "Patient Story", "Ruijin Hospital", "Wuhan Union Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital"],
 }
 
 
