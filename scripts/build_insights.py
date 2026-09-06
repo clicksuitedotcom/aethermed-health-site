@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-08-30"
+TODAY = "2026-09-06"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,107 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "complex-atrial-flutter-pulsed-field-ablation-china-japan-friendship-hospital",
+        "title": "A Complex Atrial Flutter Case Treated with Pulsed Field Ablation at China-Japan Friendship Hospital",
+        "description": "Learn what a hospital-reported complex atrial flutter case at China-Japan Friendship Hospital shows about pulsed field ablation and specialist review.",
+        "lede": "A hospital-reported case from China-Japan Friendship Hospital offers a useful view of how newer ablation technology may be considered for a complex heart-rhythm problem - and why specialist mapping and case-specific assessment remain essential.",
+        "primary_category": "success-stories",
+        "categories": ["success-stories", "hospitals-doctors", "specialty-treatment"],
+        "tags": ["China-Japan Friendship Hospital", "Cardiology", "Atrial Flutter", "Pulsed Field Ablation", "Hospital-Reported Cases"],
+        "image": "02-complex-atrial-flutter-pfa-china-japan-friendship-hospital.webp",
+        "image_alt": "Cardiac electrophysiology team reviewing a 3D rhythm map during a pulsed field ablation procedure.",
+        "published": "2026-09-03",
+        "updated": "2026-09-03",
+        "featured": True,
+        "sections": [
+            ("What the hospital reported", [
+                "China-Japan Friendship Hospital reported in July 2026 that its team had completed the hospital's first pulsed field ablation procedure for a complex atrial flutter case. The source positions the procedure as a hospital milestone. It does not, by itself, establish that pulsed field ablation is suitable for every person with atrial flutter or that one institutional case predicts long-term results.",
+            ]),
+            ("Atrial flutter is not the same as atrial fibrillation", [
+                "Both conditions are abnormal atrial rhythms, but their electrical mechanisms and ablation targets can differ. Typical atrial flutter often follows a recognised circuit in the right atrium. Atypical or complex flutter may involve scar tissue, previous surgery or ablation, or a circuit in another part of the atria. An electrophysiology team may use three-dimensional mapping and intracardiac signals to identify the pathway before selecting where and how to ablate.",
+                "The 2025 international clinical consensus statement on atrial tachycardia emphasises mechanism-based mapping, procedural safety, and institutional quality for focal and re-entrant atrial tachycardias.",
+            ]),
+            ("What pulsed field ablation does", [
+                "Pulsed field ablation, or PFA, uses short electrical pulses to create irreversible electroporation in targeted cells. Unlike radiofrequency energy or cryotherapy, it is described as a non-thermal ablation method. Its tissue selectivity is one reason it has attracted interest, particularly for pulmonary-vein isolation in atrial fibrillation. The device, waveform, catheter position, dose, and rhythm mechanism still matter, and PFA does not remove the need for careful mapping or complication management.",
+                "NICE guidance on PFA for atrial fibrillation describes the procedure and evidence for atrial fibrillation. Evidence for a specific complex-flutter circuit should not be assumed to be identical to the evidence for pulmonary-vein isolation.",
+            ]),
+            ("Why a complex flutter case needs specialist review", [
+                "The team must confirm the rhythm mechanism rather than relying on symptoms alone.",
+                "Prior ablation, heart surgery, congenital anatomy, scar, implanted devices, and other heart disease can change the map and procedural plan.",
+                "The ablation energy and catheter system must suit the intended target and the team's experience.",
+                "Stroke risk, anticoagulation, anaesthesia, vascular access, and post-procedure monitoring require individual planning.",
+                "Acute termination of a rhythm is not the same as durable freedom from recurrence; follow-up remains necessary.",
+            ], "These factors require an individual electrophysiology assessment and cannot be resolved from a diagnosis label alone."),
+            ("What this hospital-reported success story can - and cannot - show", [
+                "The report indicates that a high-level Chinese hospital is applying a newer ablation technology to a complex rhythm case and building institutional experience beyond standard atrial-fibrillation workflows. That is relevant to international patients seeking specialist assessment in China. However, a single hospital report cannot compare PFA with radiofrequency ablation, define complication rates, prove superiority, or confirm that the same technology is routinely available for another patient's rhythm.",
+            ]),
+            ("Questions to ask before travelling", [
+                "Has the rhythm been documented on ECG, Holter monitoring, or an electrophysiology study?",
+                "Is the proposed target typical flutter, atypical flutter, atrial tachycardia, atrial fibrillation, or more than one rhythm?",
+                "Why is PFA being considered instead of radiofrequency, cryoablation, medication, or another strategy?",
+                "Which device and mapping system would be used, and what is the team's experience with this specific rhythm?",
+                "What are the expected hospital stay, anticoagulation plan, follow-up schedule, estimated cost, and alternatives if the rhythm recurs?",
+            ], "The hospital should confirm the proposed approach after reviewing the patient's current records and clinical status."),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise ECGs, Holter reports, echocardiography, imaging, prior ablation reports, medication history, and discharge records for specialist review. We can help identify possible cardiology and electrophysiology routes, clarify additional tests requested by the hospital, and coordinate remote review, appointments, interpretation, travel, admission, and follow-up documentation where available. The hospital and electrophysiology team make the final diagnosis, technology choice, and treatment decision.",
+            ]),
+            ("Source and republication note", [
+                "Adapted into English from China-Japan Friendship Hospital's official WeChat article '救治现场丨中日友好医院成功完成首例脉冲消融术，精准剿灭复杂‘房扑’', published 6 July 2026 (source ID 2649902596_2). The hospital-reported case is presented as an institutional experience, not an independently verified outcome or a prediction for other patients. Clinical details in this article are limited to information that could be verified from the source record and external medical references.",
+            ]),
+        ],
+        "cta": "Share the rhythm diagnosis, ECG or Holter evidence, prior procedure reports, current medication list, and recent cardiac testing for an initial coordination assessment.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. This is a hospital-reported institutional case, not an independently verified outcome or a prediction for another patient.",
+    },
+    {
+        "slug": "car-t-therapy-china-international-patients",
+        "title": "CAR-T Therapy in China: A First Guide for International Patients",
+        "description": "A first guide to CAR-T therapy in China for international patients, covering eligibility, hospital review, treatment steps, risks, timing, and costs.",
+        "lede": "CAR-T can offer an important treatment option for selected blood cancers, but it is not a single infusion or a treatment for every patient. International patients need to understand eligibility, hospital access, risks, logistics, and follow-up before planning travel.",
+        "primary_category": "medical-in-china",
+        "categories": ["medical-in-china", "specialty-treatment", "medical-journey-guides"],
+        "tags": ["CAR-T Therapy", "Cancer Care", "International Patients", "Treatment Planning", "Clinical Trials"],
+        "image": "01-car-t-therapy-china-first-guide.webp",
+        "image_alt": "International patient discussing a CAR-T pathway with a haematologist and medical coordinator in China.",
+        "published": "2026-09-01",
+        "updated": "2026-09-01",
+        "featured": True,
+        "sections": [
+            ("What CAR-T therapy is", [
+                "CAR-T is a personalised form of immunotherapy. T cells are collected from a patient, genetically modified to recognise a target on cancer cells, expanded in a controlled facility, and returned by infusion. Most established CAR-T products are used for selected blood cancers rather than for every cancer type. The target, product, treatment line, prior therapies, organ function, infection status, and current disease burden all affect eligibility.",
+                "For a more detailed explanation, read What Is CAR-T Therapy and How Does It Work? The US National Cancer Institute also explains the manufacturing process and major risks.",
+            ]),
+            ("Why international patients explore CAR-T in China", [
+                "China has NMPA-approved autologous CAR-T products as well as hospital-based research programmes. For example, the NMPA conditionally approved ciltacabtagene autoleucel for a defined group of adults with relapsed or refractory multiple myeloma in 2025. An approval for one product and indication does not mean that every hospital offers it or that a patient qualifies.",
+                "International patients may also explore China because several major hospitals have haematology, cellular-therapy, intensive-care, neurology, infectious-disease, transfusion, and laboratory teams involved in the pathway. Product availability, clinical trials, costs, appointment timing, and international access must be checked for each case.",
+            ]),
+            ("Which patients may be considered", [
+                "The diagnosis and molecular or antigen profile match a specific approved product or research protocol.",
+                "The cancer is relapsed or refractory and the required prior treatments have been completed, where applicable.",
+                "The patient has adequate performance status and organ function for collection, conditioning, infusion, and monitoring.",
+                "Active infection and other immediate risks have been assessed and managed.",
+                "The treating team believes the expected benefit-risk balance is reasonable compared with other available options.",
+            ], "Eligibility cannot be established from a diagnosis name alone. Pathology, flow cytometry or molecular results, treatment dates and responses, complications, recent imaging, blood counts, organ-function tests, and current medications may all be needed."),
+            ("What the treatment pathway may involve", [
+                "Initial inquiry and Free Assessment: organise the diagnosis, treatment history, current status, and main clinical question.",
+                "Medical review and hospital matching: identify relevant haematology and cellular-therapy teams and confirm what records they require.",
+                "Appointment and travel planning: coordinate remote review where available, expected timing, visa documentation, accommodation, and a caregiver plan.",
+                "Arrival and hospital assessment: repeat examinations may be required before final acceptance or cell collection.",
+                "Treatment and monitoring: the pathway may include leukapheresis, manufacturing, bridging treatment, lymphodepletion, infusion, and close inpatient or outpatient observation.",
+                "Discharge and follow-up: patients need clear emergency instructions, medication plans, scheduled reviews, and records for their home doctor.",
+            ], "The exact sequence and setting depend on the product, hospital, clinical status, and treatment plan."),
+            ("Risks, timing and cost", [
+                "CAR-T can cause severe or life-threatening complications, including cytokine release syndrome, neurological toxicity, infections, prolonged low blood counts, and other product-specific risks. Long-term follow-up is important. Manufacturing time, admission length, caregiver requirements, and total cost vary with the product, hospital, complications, additional treatment, and travel. Early estimates are not guarantees.",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise and translate medical records, identify possible hospital and specialist routes, clarify whether a proposed option is an approved treatment or clinical study, and coordinate preliminary review, appointments, travel documentation, interpretation, admission logistics, and follow-up materials where available. AetherMed cannot determine CAR-T eligibility or guarantee hospital acceptance, product availability, trial enrolment, cost, timing, or outcome.",
+            ]),
+        ],
+        "cta": "Submit the pathology report, treatment history, latest imaging, laboratory results, current disease assessment, and any previous transplant or cellular-therapy records for an initial coordination review.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy.",
+    },
     {
         "slug": "ruijin-hospital-car-t-lymphoma-cases",
         "title": "What Two Hospital-Reported CAR-T Cases at Ruijin Hospital Show About Multidisciplinary Care",
@@ -674,11 +775,11 @@ ARTICLES = [
 
 
 TAG_GROUPS = {
-    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Specialist Care"],
-    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy"],
+    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Cancer Care", "Cardiology", "Atrial Flutter", "Specialist Care"],
+    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy", "Treatment Planning", "Clinical Trials", "Pulsed Field Ablation"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital", "China-Japan Friendship Hospital"],
 }
 
 
