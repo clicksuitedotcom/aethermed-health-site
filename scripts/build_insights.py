@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-09-06"
+TODAY = "2026-09-12"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,110 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "west-china-hospital-failing-mitral-bioprosthetic-valve",
+        "title": "How West China Hospital Approached a Failing Mitral Bioprosthetic Valve",
+        "description": "See how West China Hospital planned a reported high-risk mitral valve-in-valve case using CT simulation, Heart Team review, and the BATMAN technique.",
+        "lede": "A hospital-reported case from West China Hospital shows how CT simulation, multidisciplinary review, transcatheter valve-in-valve treatment, and a leaflet-management technique were combined for a patient considered at high risk for repeat open surgery.",
+        "primary_category": "hospitals-doctors",
+        "categories": ["hospitals-doctors", "specialty-treatment", "success-stories"],
+        "tags": ["West China Hospital", "Structural Heart Disease", "Mitral Valve", "Valve-in-Valve", "Hospital-Reported Cases"],
+        "image": "02-west-china-hospital-mitral-valve-in-valve-batman.webp",
+        "image_alt": "Structural-heart team reviewing CT images before mitral valve-in-valve treatment.",
+        "published": "2026-09-10",
+        "updated": "2026-09-10",
+        "featured": True,
+        "sections": [
+            ("The clinical problem: a replacement valve can also deteriorate", [
+                "A surgical bioprosthetic mitral valve can gradually narrow, leak, or develop mixed dysfunction. When symptoms return, the team must determine whether the problem is structural deterioration, thrombosis, infection, paravalvular leakage, patient-prosthesis mismatch, or another cause. The decision is not automatically between another open operation and one standard catheter procedure.",
+            ]),
+            ("What West China Hospital reported", [
+                "West China Hospital reported treating an anonymised 72-year-old woman whose surgically implanted mitral bioprosthesis had deteriorated about seven years after the original operation. She had chest tightness, shortness of breath, reduced exercise tolerance, severe pulmonary hypertension, and a high predicted risk of left ventricular outflow tract obstruction. The hospital described repeat open surgery as high risk after multidisciplinary assessment.",
+                "The cardiac and vascular surgery team led by Chief Physician Hu Jia worked with the anaesthesia and transoesophageal-echocardiography team led by Chief Physician Song Haibo. They planned a transfemoral venous, transseptal transcatheter mitral valve-in-valve procedure, or MVIV. Pre-procedure CT simulation showed that a conventional valve-in-valve implant could leave an unacceptably narrow new outflow tract.",
+            ]),
+            ("Why the team added the BATMAN technique", [
+                "During mitral valve-in-valve implantation, the new valve can displace the old bioprosthetic leaflet toward the interventricular septum. In a susceptible anatomy, this can obstruct blood leaving the left ventricle and cause severe haemodynamic instability. The hospital therefore combined MVIV with balloon-assisted translocation of the mitral anterior leaflet, known as BATMAN. The intended purpose was to move the leaflet toward the left atrium and preserve a larger neo-left-ventricular outflow tract.",
+                "The hospital described this as China's first transfemoral-transseptal MVIV combined with BATMAN. The 'first' claim applies to this specific combined approach, not to all mitral valve-in-valve procedures or all transcatheter mitral interventions.",
+            ]),
+            ("Imaging and teamwork shaped the procedure", [
+                "The reported pathway used CT reconstruction and simulated valve implantation before the procedure, then transoesophageal echocardiography during transseptal puncture, leaflet crossing, balloon expansion, and valve deployment. This illustrates why structural-heart cases often require cardiac surgery, interventional cardiology, imaging, anaesthesia, and perioperative teams to agree on anatomy, alternatives, rescue plans, and monitoring.",
+                "The 2025 ESC/EACTS valvular-heart-disease guideline states that mitral valve-in-valve treatment may be considered for selected patients at increased surgical risk when anatomy is suitable, with the treatment choice made by an interdisciplinary Heart Team.",
+            ]),
+            ("The reported short-term outcome - and its limits", [
+                "According to the hospital report, the key procedural steps took about two and a half hours and estimated blood loss was approximately 10 mL. Immediate echocardiography showed a stable valve, normal opening and closing, no obvious paravalvular leak, and no sign of left ventricular outflow tract obstruction. The patient was extubated in the operating room, returned to a standard ward, mobilised the next day, and was discharged on day seven.",
+                "These are hospital-reported peri-procedural and discharge observations from one case. They do not establish long-term durability, comparative safety, freedom from reintervention, or suitability for another patient. Follow-up echocardiography and clinical monitoring remain important.",
+                "NICE guidance on transcatheter mitral valve-in-valve implantation highlights the need for careful patient selection, specialist centres, and governance for this type of intervention.",
+            ]),
+            ("What international patients should prepare", [
+                "The operative report and implant card for the original mitral bioprosthesis, including model and size.",
+                "Recent transthoracic and transoesophageal echocardiography, cardiac CT, and the original image files where available.",
+                "Symptoms, functional limitation, pulmonary-pressure measurements, rhythm history, anticoagulation, and current medication list.",
+                "Previous cardiac operations, coronary disease, kidney and lung function, frailty, infection history, and other surgical-risk factors.",
+                "A clear question for the Heart Team: redo surgery, valve-in-valve treatment, another catheter strategy, or continued medical management.",
+            ], "The receiving Heart Team may request repeat imaging or additional testing before deciding whether any intervention is suitable."),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise valve records, echocardiography, CT images, previous operative reports, medication history, and current cardiac assessments for a structural-heart review. We can identify possible hospital and Heart Team routes, clarify missing imaging or tests, and coordinate remote review, appointments, interpretation, travel, admission logistics, and follow-up documents where available. The receiving team makes the final diagnosis and decides whether surgery, MVIV, BATMAN, or another option is appropriate.",
+            ]),
+            ("Source and republication note", [
+                "Adapted into English from West China Hospital's official WeChat report '国内首例！华西医院成功实施手术精准解决二尖瓣生物瓣衰败问题', published 29 June 2026 (source ID 2652794063_2). Patient identity remains anonymised. Procedure details and short-term observations are attributed to the hospital report and should not be interpreted as independently verified outcomes or predictions for other patients.",
+            ]),
+        ],
+        "cta": "Share the original valve information, recent echocardiography and CT, prior operative report, symptoms, and current medical summary for an initial coordination assessment.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. This is a hospital-reported institutional case, not an independently verified outcome or a prediction for another patient.",
+    },
+    {
+        "slug": "prepare-car-t-case-hospital-review-china",
+        "title": "How AetherMed Prepares a CAR-T Case for Hospital Review",
+        "description": "Learn how AetherMed prepares a CAR-T case for hospital review in China, including the clinical summary, pathology, imaging, treatment history, and safety tests.",
+        "lede": "A hospital cannot assess a CAR-T request from a diagnosis label alone. A useful review package connects the pathology, treatment chronology, current disease status, safety information, and the patient's specific question in a format the receiving team can evaluate.",
+        "primary_category": "medical-journey-guides",
+        "categories": ["medical-journey-guides", "specialty-treatment"],
+        "tags": ["CAR-T Therapy", "Medical Records", "Hospital Review", "International Patients", "Treatment Planning"],
+        "image": "01-car-t-case-hospital-review.webp",
+        "image_alt": "International patient, medical coordinator and haematologist reviewing an organised CAR-T case file in China.",
+        "published": "2026-09-08",
+        "updated": "2026-09-08",
+        "featured": True,
+        "sections": [
+            ("Why case preparation matters", [
+                "A CAR-T hospital review is not a general request for a price or appointment. The receiving team needs to decide whether the diagnosis, treatment history, current disease status, organ function, infection risk, and practical timing justify a formal assessment. A well-prepared case helps the hospital identify missing information and respond to the actual clinical question. It does not guarantee eligibility.",
+                "Start with CAR-T Therapy in China: A First Guide for International Patients if you need an overview of eligibility, treatment stages, risks, and logistics.",
+            ]),
+            ("1. Define the question before collecting files", [
+                "AetherMed first clarifies what the patient wants the hospital to assess: an approved CAR-T product, a second opinion on treatment sequencing, a possible clinical study, or another haematology option. We record the diagnosis, current country, treating doctor, urgency, preferred timing, language needs, and whether the patient can travel with a caregiver. This prevents a large file upload from arriving without a usable request.",
+            ]),
+            ("2. Build a concise clinical summary", [
+                "Confirmed diagnosis, subtype, stage or risk classification, and date of diagnosis.",
+                "A chronological treatment table showing each regimen, dates, best response, relapse or progression, toxicity, and reason for stopping.",
+                "Stem-cell transplant, prior cellular therapy, radiotherapy, surgery, and significant complications.",
+                "Current symptoms, performance status, active problems, medications, allergies, and the patient's main treatment goal.",
+            ], "The summary should let a specialist understand the case before opening the attachments."),
+            ("3. Collect the disease-specific evidence", [
+                "For lymphoma, leukaemia, or myeloma, the team may need original pathology reports, immunohistochemistry, flow cytometry, cytogenetics, molecular tests, bone-marrow reports, target-antigen information, and the most recent PET-CT, CT, MRI, or other disease assessment. Imaging reports are useful, but the hospital may also request DICOM image files or pathology slides for review.",
+                "A published CAR-T referral documentation list illustrates why treatment summaries, current laboratory tests, cardiac assessment, imaging, and diagnosis-specific reports are commonly requested. Each Chinese hospital sets its own requirements.",
+            ]),
+            ("4. Add safety and treatment-readiness information", [
+                "Recent blood counts, kidney and liver function, coagulation, infection screening, cardiac testing, neurological history, and information about active infection may affect whether review can proceed. The hospital may ask for updated tests even when similar results are already available. A remote review cannot replace its own examination or pre-treatment work-up.",
+                "The NSW Agency for Clinical Innovation's CAR-T patient information and checklist shows how heart, kidney, lung, neurological, infection, and disease assessments can form part of preparation. Protocols vary by product and centre.",
+            ]),
+            ("5. Organise, translate, and quality-check the records", [
+                "Keep original reports and translations together; do not replace or alter the source document.",
+                "Use clear English filenames with the test type and date, and remove duplicate screenshots.",
+                "Create one treatment chronology and one file index so reviewers can find the supporting evidence.",
+                "Flag pending tests, missing pathology, uncertain drug names, and conflicting dates instead of guessing.",
+            ], "See Preparing Medical Records for Treatment in China for the broader record-preparation principles."),
+            ("6. Match the case and submit a focused review package", [
+                "Hospital matching should consider the exact disease, target, product or protocol, specialist team, toxicity-management capability, international-patient route, and current availability. AetherMed submits only the relevant package and a focused question list. The hospital may request repeat pathology, new imaging, further treatment, an online consultation, or an in-person assessment before making any decision.",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help turn fragmented CAR-T records into a structured hospital-review package, coordinate translation, identify possible haematology and cellular-therapy teams, track requested updates, and arrange consultations, appointments, interpretation, travel documentation, and follow-up materials where available. AetherMed does not diagnose, select a CAR-T product, determine eligibility, or guarantee acceptance, cost, timing, trial enrolment, or outcome.",
+            ]),
+        ],
+        "cta": "Submit your pathology, treatment history, latest disease assessment, recent laboratory results, and any previous transplant or cellular-therapy records for an initial coordination review.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy.",
+    },
     {
         "slug": "complex-atrial-flutter-pulsed-field-ablation-china-japan-friendship-hospital",
         "title": "A Complex Atrial Flutter Case Treated with Pulsed Field Ablation at China-Japan Friendship Hospital",
@@ -775,11 +879,11 @@ ARTICLES = [
 
 
 TAG_GROUPS = {
-    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Cancer Care", "Cardiology", "Atrial Flutter", "Specialist Care"],
-    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy", "Treatment Planning", "Clinical Trials", "Pulsed Field Ablation"],
+    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Cancer Care", "Cardiology", "Atrial Flutter", "Structural Heart Disease", "Mitral Valve", "Specialist Care"],
+    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "Medical Records", "Hospital Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy", "Treatment Planning", "Clinical Trials", "Pulsed Field Ablation", "Valve-in-Valve"],
     "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital", "China-Japan Friendship Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital", "China-Japan Friendship Hospital", "West China Hospital"],
 }
 
 
