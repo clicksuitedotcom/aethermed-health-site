@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-09-12"
+TODAY = "2026-09-20"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,100 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "breast-cancer-mdt-international-consultation-guangdong-provincial-peoples-hospital",
+        "title": "Breast Cancer MDT International Consultation at Guangdong Provincial People's Hospital",
+        "description": "Learn how Guangdong Provincial People's Hospital reports its breast cancer MDT international consultation and what patients should prepare for review.",
+        "lede": "A breast cancer multidisciplinary team (MDT) brings different specialties together to review one case. For an international patient, the value is not simply the number of doctors involved: it is whether the team receives complete pathology, imaging, treatment history and a clear clinical question.",
+        "primary_category": "hospitals-doctors",
+        "categories": ["hospitals-doctors", "specialty-treatment"],
+        "tags": ["Guangdong Provincial People's Hospital", "Breast Cancer", "MDT Review", "International Consultation", "Medical Records"],
+        "image": "02-breast-cancer-mdt-guangdong-provincial-peoples-hospital.webp",
+        "image_alt": "Multidisciplinary breast cancer team discussing an anonymised case with an international patient.",
+        "published": "2026-09-17",
+        "updated": "2026-09-17",
+        "featured": True,
+        "sections": [
+            ("What the hospital reports about its international MDT", [
+                "Guangdong Provincial People's Hospital describes its Wednesday Breast Cancer International Consultation as a platform established by Professor Liao Ning. The hospital says the programme began in late 2019 and brings Chinese and international speakers together to discuss difficult cases, treatment standards and developments in the field.",
+                "A September 2026 hospital notice summarised a previous discussion involving an anonymised 45-year-old premenopausal patient with recurrent, widely metastatic breast cancer and a PALB2 alteration. According to the notice, specialists from several disciplines offered opinions and Professor Liao integrated the MDT discussion into a proposed next-step plan. This is a hospital-reported educational case, not evidence that the same approach is appropriate for another patient.",
+            ]),
+            ("Why an MDT may be useful in a complex breast cancer case", [
+                "Breast cancer decisions can depend on pathology, stage, previous treatment, current disease sites, menopausal status, general health and biomarkers such as ER, PR and HER2. Surgery, systemic treatment and radiotherapy may also need to be sequenced rather than considered separately.",
+                "The National Cancer Institute's breast cancer treatment overview notes that multidisciplinary management can be important when planning preoperative treatment and local therapy. An MDT does not guarantee agreement or a specific treatment; it should make the reasoning, uncertainties and next information needs clearer.",
+            ]),
+            ("What an international patient should prepare", [
+                "A one-page summary of the diagnosis, current symptoms, treatment goals and questions for the MDT.",
+                "The original pathology report, immunohistochemistry and biomarker results, including ER, PR, HER2 and other tests relevant to the case.",
+                "A chronological treatment history showing surgery, radiotherapy and each systemic therapy, with dates, response, toxicity and reason for change.",
+                "Recent imaging reports and original DICOM files where available, plus the comparison images needed to show change over time.",
+                "Current medicines, allergies, performance status, major medical conditions and recent blood-test results.",
+                "Previous molecular or germline testing reports, with confirmation of whether a finding is germline or somatic when known.",
+            ], "The NCI guide to breast cancer diagnosis explains how pathology, imaging and biomarker testing help define the disease and support treatment planning. For practical file organisation, follow AetherMed's medical-record preparation checklist."),
+            ("Questions to clarify before requesting a review", [
+                "Is the consultation an educational case conference, a formal patient consultation or both?",
+                "Which specialties are expected to review the case, and will the patient receive a written summary?",
+                "Does the team need pathology slides, tissue blocks or repeat biomarker testing?",
+                "Can the review be completed remotely, or is an in-person examination required?",
+                "What language support, fees, scheduling rules and international-patient access route apply?",
+            ], "The hospital's public notice describes a programme and a reported discussion; it should not be read as confirmation that every overseas case can be submitted, that a named expert will attend, or that the service is available on a particular date. Current access must be confirmed directly with the hospital."),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise and translate breast cancer records, identify missing pathology or imaging, formulate focused questions, and explore an appropriate hospital or MDT review route. Where available, we can coordinate consultation scheduling, interpretation, travel and follow-up documents. The receiving hospital decides whether it can accept the case, which specialists participate and what assessment or treatment is appropriate.",
+            ]),
+            ("Source and republication note", [
+                "Adapted into English from Guangdong Provincial People's Hospital's official website notice '[9月9日]普外乳腺科周三乳腺癌MDT国际会诊', published 4 September 2026. Programme details and the anonymised case summary are attributed to the hospital. Participation, access route, fees, specialists and current availability must be confirmed with the hospital; the reported case does not predict another patient's recommendation or outcome.",
+            ]),
+        ],
+        "cta": "Share your pathology, biomarker results, imaging, treatment history and current questions. AetherMed can review whether the records are ready for an initial hospital or MDT coordination request.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. This is a hospital-reported educational case, not an independently verified outcome or a prediction for another patient.",
+    },
+    {
+        "slug": "car-t-case-manager-international-patient-journey",
+        "title": "How a Case Manager Supports an International CAR-T Patient Journey",
+        "description": "Learn how a case manager supports international CAR-T patients in China through records, hospital review, travel, treatment logistics and follow-up.",
+        "lede": "For an international patient, CAR-T treatment can involve far more than one hospital appointment. Records, eligibility review, manufacturing or protocol timing, travel, a caregiver, local accommodation, interpretation, monitoring and follow-up all need to connect. A case manager helps organise these moving parts - but does not make medical decisions.",
+        "primary_category": "medical-journey-guides",
+        "categories": ["medical-journey-guides", "specialty-treatment"],
+        "tags": ["CAR-T Therapy", "Case Management", "International Patients", "Treatment Planning", "Follow-Up"],
+        "image": "01-car-t-case-manager-international-patient-journey.webp",
+        "image_alt": "International patient and caregiver reviewing a CAR-T journey plan with a medical case manager and clinician in China.",
+        "published": "2026-09-15",
+        "updated": "2026-09-15",
+        "featured": True,
+        "sections": [
+            ("What a dedicated case manager does - and does not do", [
+                "A medical case manager in China is a coordination contact between the patient, family, AetherMed and the receiving hospital. The role is to keep information, schedules and practical tasks aligned. The hospital's licensed clinicians decide whether CAR-T is appropriate, which product or protocol may be considered, what tests are required and how risks are managed.",
+                "If you are still exploring eligibility, read CAR-T Therapy in China: A First Guide for International Patients. The National Cancer Institute also explains the collection, cell-modification and infusion stages and notes that serious toxicities can occur.",
+            ]),
+            ("1. Initial inquiry and Free Assessment", [
+                "The case manager records the diagnosis, current condition, previous treatment, goals, preferred timing, country, language needs and whether a caregiver can travel. The first task is to identify what the patient is asking the hospital to assess and which records are missing - not to promise a place or quote a final treatment plan.",
+            ]),
+            ("2. Medical review and doctor matching", [
+                "The case manager organises pathology, imaging, treatment history, recent disease assessment, laboratory results and relevant transplant or cellular-therapy records. Files may need indexing or translation before submission. Hospital matching should consider the exact disease and target, the team and programme, toxicity-management resources, international-patient route and current availability.",
+                "Use AetherMed's medical-record preparation guide to build a review-ready package. A preliminary response may request updated tests, pathology review, a remote consultation or another treatment step before travel.",
+            ]),
+            ("3. Appointment and travel support", [
+                "If the hospital agrees to proceed with further assessment, the case manager helps confirm the department, expected visit window, required documents, estimated deposits and the sequence of appointments. Coordination may include invitation-letter information, travel planning, accommodation near the hospital, interpretation and a caregiver plan. Patients should avoid non-refundable bookings until the hospital pathway is sufficiently clear.",
+            ]),
+            ("4. Arrival in China", [
+                "Before the first hospital visit, the case manager checks identification, appointment details, original records, medication information and payment arrangements. On arrival, support may include airport or accommodation coordination and an orientation to registration, testing and hospital procedures. New clinical findings can still change the schedule.",
+            ]),
+            ("5. Treatment-stage coordination", [
+                "During the hospital phase, the case manager supports communication, interpretation, scheduling, payment logistics and updates requested by the clinical team. CAR-T pathways may include collection, treatment while cells are prepared, conditioning chemotherapy, infusion and close monitoring, but the exact sequence varies by product, protocol and patient.",
+                "Because cytokine release syndrome, neurological effects and infection can be serious, symptoms must be reported to the treating team immediately. The NCI patient overview describes these risks. The case manager can help communication, but emergency decisions belong to clinicians.",
+            ]),
+            ("6. Follow-up at home", [
+                "Before departure, the case manager helps collect discharge summaries, medication instructions, laboratory and imaging results, emergency contacts and the hospital's follow-up schedule. The patient should know which warning signs require urgent local care and how information will be handed to the home doctor. Follow-up requirements can continue well beyond the trip.",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can assign a coordination contact, organise and translate records, identify possible CAR-T hospital pathways, track hospital questions, and support appointments, interpretation, travel, admission logistics and return-home documentation where available. We do not diagnose, decide CAR-T eligibility, select a product, control hospital capacity or guarantee acceptance, timing, cost or outcome.",
+            ]),
+        ],
+        "cta": "Share your diagnosis, treatment history, latest disease assessment and preferred timing. AetherMed can identify the information needed for an initial coordination review and outline possible next steps.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy.",
+    },
     {
         "slug": "west-china-hospital-failing-mitral-bioprosthetic-valve",
         "title": "How West China Hospital Approached a Failing Mitral Bioprosthetic Valve",
@@ -879,11 +973,11 @@ ARTICLES = [
 
 
 TAG_GROUPS = {
-    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Cancer Care", "Cardiology", "Atrial Flutter", "Structural Heart Disease", "Mitral Valve", "Specialist Care"],
-    "Treatment & Review": ["Second Opinion", "Remote Consultation", "Medical Records Review", "Medical Records", "Hospital Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy", "Treatment Planning", "Clinical Trials", "Pulsed Field Ablation", "Valve-in-Valve"],
-    "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Returning Home"],
+    "Specialty": ["Oncology", "Haematology", "Multiple Myeloma", "Lymphoma", "Cancer Care", "Breast Cancer", "Cardiology", "Atrial Flutter", "Structural Heart Disease", "Mitral Valve", "Specialist Care"],
+    "Treatment & Review": ["Second Opinion", "Remote Consultation", "International Consultation", "Medical Records Review", "Medical Records", "Hospital Review", "MDT Review", "Multidisciplinary Care", "CAR-T Therapy", "Treatment Planning", "Clinical Trials", "Pulsed Field Ablation", "Valve-in-Valve"],
+    "Patient Journey": ["Before You Travel", "Medical Records", "Treatment Planning", "Translation", "Travel Planning", "Hospital Admission", "Case Management", "Follow-Up", "Returning Home"],
     "Location": ["China", "Shanghai"],
-    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital", "China-Japan Friendship Hospital", "West China Hospital"],
+    "Audience & Format": ["International Patients", "Complete Guide", "International Patient Departments", "Public Hospitals", "Private Hospitals", "Hospital Selection", "China Healthcare System", "Clinical Research", "Patient Story", "Hospital-Reported Cases", "Ruijin Hospital", "Wuhan Union Hospital", "China-Japan Friendship Hospital", "West China Hospital", "Guangdong Provincial People's Hospital"],
 }
 
 
@@ -892,7 +986,7 @@ def esc(value: str) -> str:
 
 
 def slugify(value: str) -> str:
-    return value.lower().replace("&", "and").replace(" ", "-").replace(":", "").replace(",", "")
+    return value.lower().replace("&", "and").replace("'", "").replace(" ", "-").replace(":", "").replace(",", "")
 
 
 def article_url(article: dict) -> str:
