@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-09-20"
+TODAY = "2026-10-05"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,105 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "prepare-neurology-imaging-reports-overseas-specialist-review",
+        "title": "Preparing Neurology Imaging and Reports for an Overseas Specialist Review",
+        "description": "Prepare neurology scans, reports, videos and a clear symptom timeline for an overseas specialist review, with practical tips for secure transfer and translation.",
+        "lede": "An overseas neurology review is easier to assess when the specialist can see the original scans, understand how symptoms changed over time and connect each test to a clinical question. A short, organised record set is usually more useful than a large folder of unexplained files.",
+        "primary_category": "medical-journey-guides",
+        "categories": ["medical-journey-guides", "specialty-treatment"],
+        "tags": ["Neurology", "Medical Records", "MRI", "Specialist Review", "Second Opinion", "International Patients"],
+        "image": "01-neurology-records-overseas-specialist-review.webp",
+        "image_alt": "International patient and family member reviewing organised neurology scans and reports with a medical coordinator.",
+        "published": "2026-09-29",
+        "updated": "2026-09-29",
+        "featured": True,
+        "sections": [
+            ("Start with one clear clinical question", [
+                "State the main reason for the review in one or two sentences. You may be seeking diagnostic clarification, a treatment review, an opinion on surgery or another procedure, or advice about further testing. Add the current diagnosis or suspected diagnosis, the most important symptoms and the decision you need help with. This helps the receiving team identify the right neurologist or multidisciplinary service.",
+            ]),
+            ("Send images as well as written reports", [
+                "A radiology report summarises the original reader's findings, but it does not replace the scan. Provide the original digital files for relevant MRI, CT, PET, SPECT or angiography studies, preferably in DICOM format, together with the report. Label each study with the date, body area, contrast status and facility. Do not rely only on photographs of films or screenshots if the original files are available.",
+                "Include the earliest useful scan and the most recent scan so the specialist can compare change over time.",
+                "Keep each study in its original folder structure and avoid renaming individual DICOM files.",
+                "Add pathology, neurophysiology or laboratory reports when they affect the neurological question.",
+                "Ask before uploading very large studies and use the hospital's approved secure transfer method.",
+            ]),
+            ("Build a concise neurological timeline", [
+                "List the date or approximate month when each major symptom began, how it progressed and what changed after treatment. Include hospital admissions, falls, seizures, loss of consciousness, infections and major medication changes. For parkinsonism or other movement disorders, note tremor, slowness, stiffness, balance, speech, swallowing, sleep and cognitive changes. A specialist still needs a clinical history and examination; imaging alone may not establish the diagnosis.",
+                "Parkinson's disease is diagnosed clinically. Imaging may support the assessment or help exclude other conditions, which is why the symptom history and examination findings should travel with the scans.",
+            ]),
+            ("Add videos and examination records when useful", [
+                "Short videos can help document intermittent symptoms such as tremor, gait changes, involuntary movements, speech episodes or seizures, but record them only when it is safe and with the patient's consent. Note the date, medication timing and what the viewer should notice. Include formal neurological examination notes and standardised scores if your treating team has recorded them.",
+            ]),
+            ("Prepare medication and treatment information", [
+                "Use generic medicine names where possible, with dose, frequency, start date and reason for use.",
+                "Record benefits, side effects and why a medicine was stopped or changed.",
+                "List implanted devices, previous neurosurgery, rehabilitation and other relevant treatment.",
+                "Include allergies, major medical conditions and current mobility or care needs.",
+            ]),
+            ("Translate for clarity without changing the source", [
+                "Keep the original report and attach an English translation if requested. The translation should preserve dates, measurements, anatomical terms and uncertainty such as 'possible' or 'cannot exclude.' Do not edit the original record or convert a preliminary impression into a confirmed diagnosis. A short bilingual index can show the file name, document type, date and language.",
+                "Use AetherMed's broader medical-record preparation guide for a complete file checklist. If the question is whether another interpretation or treatment path should be considered, review how to request a second medical opinion in China.",
+            ]),
+            ("Protect privacy and keep a complete copy", [
+                "Use a secure upload route approved by the receiving organisation. Check that the patient name, date of birth and study date match across the files, and keep an unchanged backup. Share only the records needed for the review and confirm who may access them. If urgent symptoms are developing, seek local emergency care rather than waiting for an overseas response.",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise and translate neurology records, prepare an indexed imaging list, identify an appropriate hospital or specialist review route, and coordinate secure submission, appointments, interpretation and the practical patient journey where available. AetherMed does not interpret scans, diagnose a neurological condition or guarantee hospital acceptance.",
+            ]),
+        ],
+        "cta": "Share your main neurological question, diagnosis or suspected diagnosis, symptom timeline and a list of available scans. AetherMed can outline what may be needed for an initial coordination assessment.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy.",
+    },
+    {
+        "slug": "alpha-synuclein-pet-tracer-parkinsons-research",
+        "title": "An Alpha Synuclein PET Tracer Study for Earlier Parkinson's Disease Diagnosis",
+        "description": "Learn what Huashan Hospital's alpha-synuclein PET tracer registration study may mean for Parkinson's research—and why it is not yet a routine diagnostic test.",
+        "lede": "A June 2026 report from Huashan Hospital said that a domestically developed alpha-synuclein PET tracer had entered a clinical registration study for earlier Parkinson's disease diagnosis. The project is relevant because alpha-synuclein is closely linked to Parkinson's pathology, but a registration study is research. It does not mean the tracer is already an approved or routinely available diagnostic test.",
+        "primary_category": "specialty-treatment",
+        "categories": ["specialty-treatment", "hospitals-doctors", "news"],
+        "tags": ["Parkinson's Disease", "Alpha Synuclein", "PET Imaging", "Huashan Hospital", "Clinical Research", "Neurology"],
+        "image": "02-alpha-synuclein-pet-tracer-parkinsons-research.webp",
+        "image_alt": "Neurologist and nuclear medicine researcher reviewing a generic brain PET scan in a modern imaging research suite.",
+        "published": "2026-10-01",
+        "updated": "2026-10-01",
+        "featured": True,
+        "sections": [
+            ("Why alpha synuclein is being studied", [
+                "Alpha-synuclein is a protein found in the nervous system. In Parkinson's disease and related synucleinopathies, abnormal forms can accumulate in nerve cells. Researchers have long sought a PET tracer that can enter the brain, bind selectively to relevant alpha-synuclein deposits and produce a signal that can be measured reliably in living people.",
+                "That is technically difficult. The target is present at relatively low density, different diseases may contain different forms of alpha-synuclein, and a tracer can also bind to other structures. These problems can affect image interpretation and diagnostic accuracy.",
+            ]),
+            ("What PET tracer research is designed to test", [
+                "A PET tracer is a small amount of a radiolabelled compound used to visualise a biological target. Before a tracer can support routine care, studies need to evaluate safety, radiation dosimetry, brain uptake, selectivity, image reproducibility and whether the signal separates relevant patient groups from controls. Researchers must also determine what a positive or negative result means for an individual patient.",
+                "Early human studies of other alpha-synuclein tracers show both the promise and the limits of the field. A study of ACI-12589 reported a signal in multiple system atrophy but low and variable binding in sporadic Parkinson's disease. A small first-in-human study of MK-7337 reported elevated signals in selected brain regions in participants with Parkinson's disease, while also noting off-target binding concerns. These are different tracers and cannot be used to predict the performance of the Huashan tracer.",
+            ]),
+            ("What the Huashan Hospital report means", [
+                "The hospital's WeChat report describes the start of a clinical registration study for a domestically developed alpha-synuclein PET tracer. In practical terms, the study is intended to generate evidence required for regulatory and clinical evaluation. The public title alone does not establish the study protocol, participant criteria, accuracy, approval status or present availability to international patients. Those details must be confirmed with the hospital and the applicable trial or regulatory record.",
+            ]),
+            ("Why this research could matter", [
+                "If a tracer is eventually validated, it could help researchers examine disease biology in living patients, select participants for trials, measure target engagement and study progression. It may also contribute to earlier or more specific assessment. Whether it improves diagnosis or changes treatment must be shown in appropriately designed studies; the launch of a registration study does not prove those benefits.",
+            ]),
+            ("Questions to ask before considering a research assessment", [
+                "What is the exact tracer and study registration number?",
+                "Is the study recruiting, and what are the inclusion and exclusion criteria?",
+                "Is participation intended for diagnosis, research measurement or treatment selection?",
+                "What radiation exposure, preparation, visits and follow-up are required?",
+                "Will individual results be returned, and could they change clinical care?",
+                "Are international participants accepted, and who pays for study-related and non-study care?",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can help organise neurology records, clarify the question for specialist review, contact potential hospital pathways and coordinate questions about current study status, eligibility review, appointments, interpretation and travel where available. AetherMed does not operate the study, interpret PET images or guarantee recruitment, access, diagnosis or outcome.",
+            ]),
+            ("Source and republication note", [
+                "English adaptation based on Huashan Hospital's WeChat article '国内首个自主研发的帕金森病早诊α-syn PET示踪剂启动临床注册研究，精准早诊迈出关键一步', published 2 June 2026 (source ID 2671320834_1). Additional context is drawn from cited clinical guidance and published alpha-synuclein PET studies. This is not a verbatim translation, and the hospital study details should be reconfirmed before publication.",
+            ]),
+        ],
+        "cta": "Share your diagnosis or suspected diagnosis, symptom history, current treatment, recent neurological assessment and imaging list. AetherMed can help identify the information needed to ask a hospital about specialist review or relevant research routes.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. The tracer described is a research subject and should not be understood as an approved or routinely available clinical test.",
+    },
     {
         "slug": "breast-cancer-mdt-international-consultation-guangdong-provincial-peoples-hospital",
         "title": "Breast Cancer MDT International Consultation at Guangdong Provincial People's Hospital",
