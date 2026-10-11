@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://aethermed.health"
-TODAY = "2026-10-05"
+TODAY = "2026-10-11"
 
 GOOGLE_TAG = """    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-34YKBXVDEF"></script>
@@ -56,6 +56,106 @@ CATEGORIES = {
 
 
 ARTICLES = [
+    {
+        "slug": "complex-biliary-cancer-case-review-china",
+        "title": "How AetherMed Coordinates Review of a Complex Biliary Cancer Case",
+        "description": "Learn how AetherMed coordinates records, specialist matching, hospital review and travel planning for a complex biliary cancer assessment in China.",
+        "lede": "A complex biliary cancer case rarely turns on one scan or one procedure. The review may need to connect the tumour location, pathology, biliary obstruction, drainage history, liver function, previous treatment and the patient's current condition. AetherMed coordinates the information and hospital pathway so the receiving specialists can assess the case. The hospital and licensed clinicians make every diagnosis and treatment decision.",
+        "primary_category": "medical-journey-guides",
+        "categories": ["medical-journey-guides", "specialty-treatment"],
+        "tags": ["Bile Duct Cancer", "Biliary Cancer", "Multidisciplinary Review", "Medical Records", "International Patients", "Treatment Planning"],
+        "image": "01-complex-biliary-cancer-case-review-china.webp",
+        "image_alt": "International patient and family member discussing anonymised biliary imaging with a medical coordinator and specialist in China.",
+        "published": "2026-10-06",
+        "updated": "2026-10-06",
+        "featured": True,
+        "sections": [
+            ("Step 1: Free Assessment and a focused question", [
+                "The first step is to define what the patient needs from the review. The question may concern operability, another local procedure, systemic treatment, management of recurrent obstruction, or a second opinion after previous treatment. AetherMed records the current diagnosis, symptoms, recent complications, treatment history, home country, language needs and preferred timing. This initial assessment does not confirm medical suitability or hospital acceptance.",
+            ]),
+            ("Step 2: Build a review-ready biliary cancer file", [
+                "Pathology reports and, if requested, pathology slides or tissue-block information.",
+                "Recent contrast CT or MRI and MRCP images in their original digital format, with reports.",
+                "ERCP, PTC, drainage and stent procedure notes, including dates and current device status.",
+                "A dated treatment timeline covering surgery, chemotherapy, radiotherapy and local procedures.",
+                "Recent liver function, bilirubin, blood counts, kidney function, coagulation and relevant tumour-marker results.",
+                "A current medication list, allergies, infection history and a concise clinical summary.",
+            ], "If fever, jaundice, confusion, severe pain or another urgent change is developing, the patient should seek local medical care immediately. An overseas document review cannot manage an emergency. Keep the original report beside any English translation and use a simple index so dates and procedures can be matched."),
+            ("Step 3: Match the case to the right hospital team", [
+                "Biliary cancers can involve hepatobiliary surgery, medical oncology, gastroenterology, interventional radiology, radiation oncology, pathology and imaging. Matching therefore depends on the clinical question rather than the diagnosis name alone. AetherMed can identify potential specialist or multidisciplinary routes and confirm what the hospital wants to review. It does not rank a hospital as universally best or promise access to a particular doctor or technology.",
+            ]),
+            ("Step 4: Coordinate medical review and questions", [
+                "The receiving team may ask for missing imaging, pathology confirmation, updated laboratory tests or a consultation before giving an opinion. The review may consider surgery, systemic therapy, biliary drainage, radiotherapy or selected local treatments such as ablation or photodynamic therapy. Listing an option does not mean it is appropriate. Tumour extent, anatomy, prior procedures, infection risk, organ function and treatment goals can all change the decision.",
+                "A second medical opinion in China can clarify how specialists interpret the evidence and what additional assessment is required without committing the patient to travel or treatment.",
+            ]),
+            ("Step 5: Plan appointments and travel only after review", [
+                "If an in-person assessment is recommended, AetherMed can coordinate appointment requests, estimated timelines, documents, interpretation, accommodation, airport transfers and local transport where available. Patients should keep bookings flexible until the hospital confirms the pathway. Costs and timing may change if repeat imaging, drainage, infection treatment or a longer admission becomes necessary.",
+            ]),
+            ("Step 6: Connect treatment and follow-up", [
+                "During the China phase, coordination may include registration, interpretation, schedule updates and communication of practical requirements. Before the patient returns home, the hospital should provide procedure or treatment records, medication instructions, follow-up timing, warning signs and a plan for transferring information to the home doctor.",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can organise and translate records, prepare a case index, identify potential biliary cancer review routes, coordinate hospital questions and appointments, and support interpretation, travel arrangements and follow-up documentation where available. AetherMed does not diagnose, recommend a treatment independently, manage emergencies or guarantee acceptance, timing, cost or outcome.",
+            ]),
+        ],
+        "cta": "Share the diagnosis, pathology, recent imaging, drainage or stent history, treatment timeline and latest blood results. AetherMed can outline the information needed for an initial hospital coordination review.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy.",
+    },
+    {
+        "slug": "photodynamic-therapy-complex-bile-duct-cancer-xian-hospital-case",
+        "title": "Photodynamic Therapy for Complex Bile Duct Cancer: A Xi'an Hospital Case",
+        "description": "Explore a Xi'an hospital-reported bile duct cancer PDT case, how photodynamic therapy works, its evidence limits and questions patients should ask.",
+        "lede": "A May 2026 report from the First Affiliated Hospital of Xi'an Jiaotong University described photodynamic therapy for a patient with complex bile duct cancer at its Land Port campus. The report is useful as an example of a specialised local treatment pathway. It does not show that photodynamic therapy is suitable for every bile duct cancer or that the reported result can be expected in another patient.",
+        "primary_category": "success-stories",
+        "categories": ["success-stories", "specialty-treatment", "hospitals-doctors"],
+        "tags": ["Bile Duct Cancer", "Photodynamic Therapy", "Cholangiocarcinoma", "Xi'an", "Hepatobiliary Care", "Hospital-Reported Cases"],
+        "image": "02-photodynamic-therapy-bile-duct-cancer-xian-case.webp",
+        "image_alt": "Multidisciplinary hepatobiliary team reviewing generic bile duct imaging and a photodynamic therapy concept.",
+        "published": "2026-10-08",
+        "updated": "2026-10-08",
+        "featured": True,
+        "sections": [
+            ("What the hospital reported", [
+                "The hospital's WeChat article states that its specialised hepatobiliary surgical team carried out precision photodynamic therapy for a complex cholangiocarcinoma case. The available source record does not provide enough verified detail to restate the patient's full diagnosis, prior treatment, device, photosensitising medicine, complications or follow-up. These points should be confirmed with the hospital before patient comparison.",
+            ]),
+            ("How photodynamic therapy works", [
+                "Photodynamic therapy uses a photosensitising medicine followed by light at a selected wavelength. When the medicine is activated in the target area, the reaction can damage local tumour tissue. For bile duct cancer, light may be delivered through an endoscopic or percutaneous route, often in the wider context of biliary drainage and stent management. The medicine, light system, timing and treatment field vary by programme.",
+            ]),
+            ("When PDT may be discussed", [
+                "Published literature mainly discusses endobiliary PDT as a local palliative option for selected patients with unresectable perihilar or extrahepatic cholangiocarcinoma and malignant biliary obstruction. It is not a substitute for determining whether surgery is possible or for considering current systemic treatment. The position of the tumour, drainage anatomy, infection control, previous procedures, liver function and the patient's goals all affect suitability.",
+                "The British Society of Gastroenterology guideline states that adjunctive endobiliary photodynamic therapy is not standard care for hilar or distal cholangiocarcinoma receiving palliative treatment. Clinical reviews likewise describe PDT as a context-dependent local biliary strategy rather than an established survival-prolonging treatment.",
+            ]),
+            ("What the evidence can and cannot show", [
+                "Earlier studies and meta-analyses reported signals for improved biliary drainage, quality of life or survival in selected unresectable cases, but much of the evidence was non-randomised or otherwise limited. Results can be affected by drainage quality, infection, stent strategy, repeat treatment and access to systemic therapy. A 2023 systematic review of PDT combined with chemotherapy found a survival association but concluded that stronger evidence was still needed before establishing a standard approach.",
+                "Population averages cannot predict an individual patient's result, and evidence about one PDT protocol does not validate every medicine, light-delivery system or treatment schedule.",
+            ]),
+            ("Risks and practical limits", [
+                "Photosensitivity reactions can occur, so patients may need strict light-avoidance instructions after the medicine.",
+                "Cholangitis, sepsis, liver abscess, abdominal pain, bleeding or other biliary-procedure complications may occur.",
+                "Drainage or stent problems may require urgent reassessment or another procedure.",
+                "PDT treats a local area and may not address disease elsewhere in the body.",
+                "Availability, regulatory status, admission requirements and cost must be confirmed for the individual hospital and date.",
+            ]),
+            ("Questions for a specialist review", [
+                "Is the disease resectable, and has a hepatobiliary multidisciplinary team reviewed the case?",
+                "What is the aim of PDT in this case, and what alternatives are being compared?",
+                "Which photosensitiser and light-delivery method would be used?",
+                "How will biliary drainage, infection prevention and stent care be managed?",
+                "What monitoring, light precautions, repeat sessions and follow-up are expected?",
+                "Is the proposed treatment routinely available, part of a study or subject to special approval?",
+            ]),
+            ("What AetherMed can help with", [
+                "For patients considering medical tourism in China, AetherMed can organise and translate pathology, imaging and biliary-procedure records, identify potential hospital review routes, and coordinate questions about multidisciplinary assessment, current PDT availability, appointments, interpretation and travel where available. AetherMed does not determine eligibility, provide PDT, promise access or guarantee a result.",
+            ]),
+            ("Source and republication note", [
+                "English adaptation based on the First Affiliated Hospital of Xi'an Jiaotong University WeChat article '交医精术 | 生命之光！交大一附院陆港院区成功开展复杂胆管癌光动力治疗', published 20 May 2026 (source ID 2655923034_1). The hospital-reported case has been summarised conservatively; additional clinical context comes from clinical guidelines and peer-reviewed reviews. This is not a verbatim translation. Patient details, protocol, outcome and current availability must be reconfirmed before patient comparison.",
+            ]),
+        ],
+        "cta": "Share the pathology, recent CT or MRI and MRCP, drainage or stent reports, treatment history and current blood results. AetherMed can help prepare the information needed for an initial specialist coordination assessment.",
+        "include_standard_help": False,
+        "disclaimer": "This article is for general educational information only and is not medical advice, diagnosis, treatment, or a guarantee of access, suitability, cost, timing, or outcome. AetherMed provides medical coordination and does not independently diagnose or prescribe treatment. Final eligibility and treatment decisions are made by the receiving hospital and licensed clinicians after appropriate assessment. Remote review cannot replace an in-person examination or emergency care. Appointments and hospital acceptance depend on clinical review, institutional policy, and capacity; costs and timelines are estimates, not guarantees. If you may have a medical emergency, contact local emergency services immediately. Use of AetherMed's services is subject to its Terms & Conditions and Privacy Policy. This is a hospital-reported institutional case, not an independently verified outcome or a prediction for another patient.",
+    },
     {
         "slug": "prepare-neurology-imaging-reports-overseas-specialist-review",
         "title": "Preparing Neurology Imaging and Reports for an Overseas Specialist Review",
